@@ -43,7 +43,7 @@
       <!--INTRO-->
       <section class="form-intro">
         <div class="wrapper">
-          <h1 class="intro">
+          <h1 class="form-intro__title">
             Конкурс на самое безбашенное путешествие с Пинк
           </h1>
         </div>
@@ -57,117 +57,119 @@
           </p>
 
           <form class="form-block__form" method="get" action="https://echo.htmlacademy.ru">
-            <div class="form__contacts-name half-size-form">
-              <div class="contacts-name__your-surname">
-                <label for="user-surname">Фамилия:</label>
-                <input class="user-contacts-name" type="text" id="user-surname" name="user-surname" placeholder="Укажите фамилию *" required>
+            <div class="form-block__form-contacts half-size-form">
+              <div class="contact-input">
+                <label class="contact-input__label" for="user-surname">Фамилия:</label>
+                <input class="contact-input__input" type="text" id="user-surname" name="user-surname" placeholder="Укажите фамилию *" required>
               </div>
 
-              <div class="contacts-name__your-name">
-                <label for="user-name">Имя:</label>
-                <input class="user-contacts-name" type="text" id="user-name" name="user-name" placeholder="Введите ваше имя *" required>
+              <div class="contact-input">
+                <label class="contact-input__label" for="user-name">Имя:</label>
+                <input class="contact-input__input contact-input__input-long"  type="text" id="user-name" name="user-name" placeholder="Введите ваше имя *" required>
               </div>
 
-              <div class="contacts-name__your-middle-name">
-                <label for="user-middle-name">Отчество:</label>
-                <input class="user-contacts-name" type="text" id="user-middle-name" name="user-middle-name" placeholder="Ну и отчество тоже">
+              <div class="contact-input">
+                <label class="contact-input__label" for="user-middle-name">Отчество:</label>
+                <input class="contact-input__input" type="text" id="user-middle-name" name="user-middle-name" placeholder="Ну и отчество тоже">
               </div>
 
             </div> <!-- /form__contacts-name -->
 
-            <div class="form-block__applications half-size-form">
+            <div class="form-block__form-contacts half-size-form">
 
-              <fieldset>
-                <legend class="form-block__legend-title">
+              <fieldset class="form-block__fieldset">
+                <legend class="form-block__legend">
                   С каким приложением путешествовали?
                 </legend>
 
-                <ul class="applications__list">
-                  <li class="applications__item">
-                    <input class="visually-hidden applications__item-input" type="radio" name="application-selection" value="for-iOS" id="filter-radio_for-iOS" checked>
+                <ul class="form-block__list ">
+                  <li class="form-block__item form-block__item-radio">
+                    <input class="visually-hidden contact-input__input contact-input__input-radio" type="radio" name="application-selection" value="for-iOS" id="filter-radio_for-iOS" checked>
                     <label for="filter-radio_for-iOS">Pink для iOS</label>
                   </li>
 
-                  <li class="applications__item">
-                    <input class="visually-hidden applications__item-input" type="radio" name="application-selection" value="for-Android" id="filter-radio_for-Android">
-                    <label for="filter-radio_for-Android">Pink на Android</label>
+                  <li class="form-block__item form-block__item-radio">
+                    <input class="visually-hidden contact-input__input contact-input__input-radio" type="radio" name="application-selection" value="for-Android" id="filter-radio_for-Android">
+                    <label class="contact-input__label" for="filter-radio_for-Android">Pink на Android</label>
                   </li>
 
-                  <li class="applications__item">
-                    <input class="visually-hidden applications__item-input" type="radio" name="application-selection" value="for-Windows-Phone" id="filter-radio_for-Windows-Phone">
-                    <label for="filter-radio_for-Windows-Phone">Windows Phone</label>
+                  <li class="form-block__item form-block__item-radio">
+                    <input class="visually-hidden contact-input__input contact-input__input-radio" type="radio" name="application-selection" value="for-Windows-Phone" id="filter-radio_for-Windows-Phone">
+                    <label class="contact-input__label" for="filter-radio_for-Windows-Phone">Windows Phone</label>
                   </li>
 
                 </ul>
               </fieldset>
             </div> <!-- /form-block__applications -->
 
-            <div class="form-block__contact-information">
-              <fieldset>
-                <legend class="form-block__legend-title">
+            <div class="form-block__form-contacts">
+              <fieldset class="form-block__fieldset">
+                <legend class="form-block__legend">
                   Контактная информация
                 </legend>
-                <div class="contact-information_phone user-contact-information">
-                  <input class="user-contacts-phone" type="tell" id="user-contacts-phone" name="user-contacts-phone" placeholder="Номер, пожалуйста"><br>
-                  <label for="user-contacts-phone">Номер телефона</label>
+                <div class="contact-input">
+                  <input class="contact-input__input" type="tell" id="user-contacts-phone" name="user-contacts-phone" placeholder="Номер, пожалуйста"><br>
+                  <label class="contact-input__label" for="user-contacts-phone">Номер телефона</label>
                 </div>
 
-                <div class="contact-information_email user-contact-information">
-                  <input class="user-contacts-email" type="email" id="user-contacts-email" name="user-contacts-email" placeholder="Введите почту *" required><br>
-                  <label for="user-contacts-phone">Адресс почты</label>
+                <div class="contact-input">
+                  <input class="contact-input__input" type="email" id="user-contacts-email" name="user-contacts-email" placeholder="Введите почту *" required><br>
+                  <label class="contact-input__label" for="user-contacts-phone">Адресс почты</label>
                 </div>
               </fieldset>
             </div> <!-- /form-block__contact-information -->
 
-            <div class="form-block__progress">
-            <fieldset>
-              <legend class="legend-title">Ваши безбашенные достижения в путешествии</legend>
-                <ul class="progress__list">
-                  <li class="progress__item">
+            <div class="form-block__form-contacts">
+            <fieldset class="form-block__fieldset">
+              <legend class="form-block__legend">Ваши безбашенные достижения в путешествии</legend>
+
+                <ul class="form-block__list">
+
+                  <li class="form-block__item form-block__item-checkbox">
                     <input class="visually-hidden progress__input-checkbox progress__input" type="checkbox" name="selfie" id="selfie" checked>
                     <label for="selfie">Сделал селфи с акулой</label>
                   </li>
 
-                  <li class="progress__item">
-                    <input class="visually-hidden progress__input-checkbox progress__input" type="checkbox" name="on-beach" id="on-beach" checked>
+                  <li class="form-block__item form-block__item-checkbox">
+                    <input class="visually-hidden contact-input__input" type="checkbox" name="on-beach" id="on-beach" checked>
                     <label for="on-beach">Обгорел на пляже</label>
                   </li>
 
-                  <li class="progress__item">
-                    <input class="visually-hidden progress__input-checkbox progress__input" type="checkbox" name="chuck-norris" id="chuck-norris">
+                  <li class="form-block__item form-block__item-checkbox">
+                    <input class="visually-hidden contact-input__input" type="checkbox" name="chuck-norris" id="chuck-norris">
                     <label for="chuck-norris">Видел Чака Норриса</label>
                   </li>
 
-                  <li class="progress__item">
-                    <input class="visually-hidden progress__input-checkbox progress__input" type="checkbox" name="souvenirs" id="souvenirs">
+                  <li class="form-block__item form-block__item-checkbox">
+                    <input class="visually-hidden contact-input__input" type="checkbox" name="souvenirs" id="souvenirs">
                     <label for="souvenirs">Накупил сувениров</label>
                   </li>
 
-                  <li class="progress__item">
-                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="tower" id="tower" checked>
+                  <li class="form-block__item form-block__item-checkbox">
+                    <input class="visually-hidden contact-input__input" type="checkbox" name="tower" id="tower" checked>
                     <label for="tower">Удержал башню</label>
                   </li>
 
-                  <li class="progress__item">
-                    <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="hotel">
+                  <li class="form-block__item form-block__item-checkbox">
+                    <input class="visually-hidden contact-input__input" type="checkbox" name="hotel" id="hotel">
                     <label for="hotel">Разгромил отель</label>
                   </li>
                 </ul>
               </fieldset>
             </div> <!-- /form-block__progress -->
 
-            <div class="form-block__emotion">
+            <div class="form-block__form-contacts">
 
-            <fieldset>
-              <legend class="legend-title">
+            <fieldset class="form-block__fieldset">
+              <legend class="form-block__fieldset">
                 Опишите свои эмоции
               </legend>
-              <textarea rows="5" id="your-emotion" name="content" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="contact-input__input  contact-input__input--center" rows="5" id="your-emotion" name="content" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
 
           </div> <!-- /form-block__emotion -->
 
-          <button class="form-block__button" type="submit">Отправить форму</button>
+          <button class="form-block__button" type ="submit">Отправить форму</button>
 
           <div class="form-block__attention">
             <p class="attention__content">
