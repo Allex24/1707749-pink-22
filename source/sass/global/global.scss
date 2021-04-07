@@ -1,0 +1,27 @@
+// Global
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100%;
+  color: $darkgrey;
+  background-color: $white;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.visually-hidden {
+  display:none;
+}

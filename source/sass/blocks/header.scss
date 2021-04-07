@@ -1,0 +1,18 @@
+// Header
+
+.header {
+  background-color: $black;
+  opacity: 0.3;
+}
+
+.site-list__item {
+  list-style-type: none;
+ }
+
+.site-list__link {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $white;
+}
