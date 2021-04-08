@@ -1,2 +1,51 @@
 // Intro
 
+.intro {
+  background: url(../img/intro_back-mobile.png) no-repeat;
+}
+
+.itro__slogan {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: $white;
+  padding-bottom: 34px;
+  padding-top: 95px;
+}
+
+.into__block-icon {
+  background: #1D2631;
+}
+
+.block-icon__link {
+  margin-top: 28px;
+  margin-bottom: 32px;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $white;
+  border: 3px solid $white;
+  border-radius: 29px;
+  padding: 16px 36px;
+}
+
+.block-icon__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.block-icon__item {
+  list-style-type: none;
+  margin-bottom: 28px;
+}
+
+.block-icon__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: $white;
+  padding-bottom: 38px;
+}
