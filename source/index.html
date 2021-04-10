@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icon-16.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icon-152.png">
@@ -19,9 +20,9 @@
             <img src="img/logotype-mobile.svg" width="74" height="23" alt="Мобильное приложение «Пинк»">
           </a>
           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
+            <div class="header__burger">
+              <span></span>
+            </div>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
@@ -50,7 +51,7 @@
 
       <!--INTRO-->
       <section class="intro">
-        <div class="wrapper">
+        <div class="container">
           <h2 class="visually-hidden">
             Знакомство с мобильным приложением «Пинк»
           </h2>
@@ -144,7 +145,7 @@
       </section>
 
 			<section class="reviews">
-				<div class="wrapper slider">
+				<div class="container">
 					<h2 class="visually-hidden">Отзывы о нас</h2>
 					<div class="reviews__list slider__list" >
 
@@ -199,7 +200,7 @@
 			</section>
 
 			<section class="price">
-				<div class="wrapper">
+				<div class="container">
 					<h2 class="visually-hidden">Наши тарифы</h2>
 
 					<dl class="price__list">
@@ -303,7 +304,7 @@
 			</section>
 
 			<section class="contacts">
-				<div class="wrapper">
+				<div class="container">
 					<h2 class="visually-hidden">Наши контакты</h2>
 					<p class="contacts__content">
 						Остались вопросы?<br>
@@ -329,7 +330,7 @@
     </main>
 
 		<footer class="footer">
-			<div class="wrapper">
+			<div class="container">
 				<img src="img/footer-logo.svg" alt="логотип компании Пинк">
 				<div class="footer__social-block">
 					<ul class="social-block__list">

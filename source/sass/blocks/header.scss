@@ -3,11 +3,21 @@
 .header {
   background-color: $black;
   opacity: 0.3;
+  &__inner {
+    min-height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-nav__wrapper {
+  display: none;
 }
 
 .site-list__item {
   list-style-type: none;
- }
+}
 
 .site-list__link {
   font-weight: bold;
