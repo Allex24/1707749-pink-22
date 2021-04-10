@@ -1,7 +1,8 @@
 // Intro
 
 .intro {
-  background: url(../img/intro_back-mobile.png) no-repeat;
+  background: $bg-grey;
+  position: relative;
 }
 
 .itro__slogan {
@@ -9,13 +10,10 @@
   font-size: 24px;
   line-height: 29px;
   color: $white;
-  padding-bottom: 34px;
-  padding-top: 95px;
+  position: absolute;
+  top: 91px;
 }
 
-.into__block-icon {
-  background: #1D2631;
-}
 
 .block-icon__link {
   margin-top: 28px;

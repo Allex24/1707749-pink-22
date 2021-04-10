@@ -3,6 +3,9 @@
 .header {
   background-color: $black;
   opacity: 0.3;
+  position: absolute;
+  z-index: 100;
+  min-width: 320px;
   &__inner {
     min-height: 66px;
     display: flex;
