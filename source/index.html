@@ -2,34 +2,40 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon-16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon-152.png">
     <title>Мобильное приложение Пинк</title>
+    <link href="./css/style.css" rel="stylesheet">
+
   </head>
-  <body class="page-body" style="background-color: aquamarine;">
+  <body class="page-body">
 
     <!--HEADER-->
-        <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header__inner">
           <a class="header__logo">
             <img src="img/logotype-mobile.svg" width="74" height="23" alt="Мобильное приложение «Пинк»">
           </a>
           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
+            <div class="header__burger">
+              <span></span>
+            </div>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
-                  <a>Главная</a>
+                  <a class="site-list__link">Главная</a>
                 </li>
                 <li class="site-list__item">
-                  <a href="">Фотографии</a>
+                  <a class="site-list__link" href="#">Фотографии</a>
                 </li>
                 <li class="site-list__item">
-                  <a href="">Конкурс</a>
+                  <a class="site-list__link" href="#">Конкурс</a>
                 </li>
                 <li class="site-list__item">
-                  <a href="https://htmlacademy.ru/">HTML Academy</a>
+                  <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
                 </li>
               </ul>
             </div>
@@ -45,16 +51,17 @@
 
       <!--INTRO-->
       <section class="intro">
-        <div class="wrapper">
+        <div class="intro__wrapper">
           <h2 class="visually-hidden">
             Знакомство с мобильным приложением «Пинк»
           </h2>
           <div class="itro__slogan">
             Взгляните на жизнь иначе!
           </div>
-          <a class="intro__link" href="#">Скачать приложение</a>
+          <img class="intro__image" src="img/bg-intro-mobile.png" alt="мобильный телефон в руке">
 
           <div class="into__block-icon">
+            <a class="block-icon__link" href="#">Скачать приложение</a>
             <ul class="block-icon__list">
               <li class="block-icon__item">
                 <img src="img/icon-apple-logo.svg" width="47" height="56" alt="логотип apple">
@@ -66,12 +73,11 @@
                 <img src="img/icon-microsoft-logo.svg" width="44" height="41" alt="логотип microsoft">
               </li>
             </ul>
+            <p class="block-icon__text">
+              Доступно для iPhone, iPad, Android,<br>
+              Windows Phone, OS X, Windows 8
+            </p>
           </div>
-
-          <p class="intro__text">
-            Доступно для iPhone, iPad, Android,<br>
-            Windows Phone, OS X, Windows 8
-          </p>
 
         </div>
       </section>
@@ -129,7 +135,7 @@
 										Британские ученые провели исследования и доказали,
 										что положительный эффект от использования приложения длится целые сутки!
 									</p>
-									<a href="" class="effect-content__link">
+									<a class="effect-content__link" href="" >
 										Узнать больше об исследовании
 									</a>
 								</div> <!--advantages__effect-content-->
@@ -139,7 +145,7 @@
       </section>
 
 			<section class="reviews">
-				<div class="wrapper slider">
+				<div class="container">
 					<h2 class="visually-hidden">Отзывы о нас</h2>
 					<div class="reviews__list slider__list" >
 
@@ -194,7 +200,7 @@
 			</section>
 
 			<section class="price">
-				<div class="wrapper">
+				<div class="container">
 					<h2 class="visually-hidden">Наши тарифы</h2>
 
 					<dl class="price__list">
@@ -298,7 +304,7 @@
 			</section>
 
 			<section class="contacts">
-				<div class="wrapper">
+				<div class="container">
 					<h2 class="visually-hidden">Наши контакты</h2>
 					<p class="contacts__content">
 						Остались вопросы?<br>
@@ -324,7 +330,7 @@
     </main>
 
 		<footer class="footer">
-			<div class="wrapper">
+			<div class="container">
 				<img src="img/footer-logo.svg" alt="логотип компании Пинк">
 				<div class="footer__social-block">
 					<ul class="social-block__list">
@@ -356,7 +362,7 @@
 				</div>
 
 				<div class="footer__copyright copyright">
-					<b class="copyright__text">Разработано:</b>
+					<span class="copyright__text">Разработано:</span>
 					<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
 						<svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>

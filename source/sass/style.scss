@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+// Global
+
+@import 'global/normalize.scss';
+@import 'global/fonts.scss';
+@import 'global/variables.scss';
+@import 'global/global.scss';
+
+
+
+// Blocks
+
+@import 'blocks/container.scss';
+@import 'blocks/header.scss';
+@import 'blocks/intro.scss';
+@import 'blocks/advantages.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/price.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/header__burger.scss';
+
+
+
