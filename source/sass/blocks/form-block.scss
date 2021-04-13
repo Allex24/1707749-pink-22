@@ -1,0 +1,204 @@
+// Form-block
+
+.form-block__content {
+  max-width: 280px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 54px;
+  margin: 0 auto;
+}
+
+.form-block__form {
+  padding-top: 34px;
+}
+
+.contact-input {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    font-size: 14px;
+    line-height: 30px;
+    color: $pink;
+    text-transform: uppercase;
+    padding-left: 23px;
+    margin-bottom: 8px;
+    margin-top: 21px;
+  }
+
+  &__input{
+    font-size: 18px;
+    line-height: 30px;
+    padding: 13px 0 13px 20px;
+    border: 2px solid $borderGrey;
+    border-radius: 1px;
+  }
+}
+
+.form-block__form-contacts-name {
+  margin-bottom: 52px;
+  padding: 0 20px;
+}
+
+.form-block__form-color {
+  background-color: $lightgrey;
+}
+
+.form-block__fieldset {
+  border: none;
+  margin: 0 auto;
+  padding: 0 20px;
+  }
+
+.form-block__legend {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $pink;
+  text-align: center;
+  max-width: 220px;
+}
+
+.legend--checkbox {
+  padding: 34px 0 55px;
+}
+
+.form-block__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-block__item {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form-block__item-checkbox {
+  padding: 0 0 57px 59px;
+}
+
+.form-block__input-checkbox + label {
+  position: relative;
+
+}
+
+.form-block__input-checkbox + label:before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -4px;
+  left: -59px;
+  border: 2px solid $borderGrey;
+  border-radius: 1px;
+  background-color: $white;
+}
+
+.form-block__input-checkbox + label::after {
+  content: '';
+  background-image: url(../img/tick.svg);
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  left: -52px;
+  top: 4px;
+}
+
+.legen-hidden {
+  display: none;
+}
+
+.form-contacts--email {
+  margin-bottom: 44px;
+}
+
+.legend--radio {
+  padding: 42px 0 52px;
+}
+
+form-block__item-radio{
+  margin: 0;
+  padding: 0;
+}
+
+.form-block__item-radio {
+  padding: 0 0 62px 70px;
+}
+
+.form-block__item-radio:last-child {
+  padding-bottom: 54px;
+}
+
+.form-block__input-radio + label {
+  position: relative;
+}
+
+.form-block__input-radio + label:before {
+  content: "";
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  top: -5px;
+  left: -69px;
+  border: 2px solid $borderGrey;
+  border-radius: 50%;
+  background-color: $white;
+}
+
+.form-block__input-radio + label::after {
+  content: '';
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 6px;
+  left: -58px;
+  border-radius: 50%;
+  background-color: $pink;
+}
+
+.form-block__legend--textarea {
+  padding: 42px 0 22px;
+}
+
+.contact-input__input--center {
+  width: 100%;
+  min-height: 197px;
+  padding: 22px 0 0 20px;
+}
+
+.form-block__fieldset--textarea {
+  margin-bottom: 52px;
+}
+
+.form-block__button {
+  padding: 0 20px;
+}
+
+.button {
+  width: 280px;
+  height: 65px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $bgButton;
+  border: 2px solid $bgButton;
+  border-radius: 1px;
+  padding: 0;
+}
+
+.attention__content {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.attention__content-hidden {
+  display: none;
+}
+
+.content__star {
+  color: $pink;
+}

@@ -1,0 +1,22 @@
+// Intro-form
+
+.intro-form {
+  min-height: 237px;
+  background-image: url(../img/bg-intro-form-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
+.intro__title {
+  margin: 0 auto;
+  max-width: 228px;
+  padding-top: 102px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $white;
+}
