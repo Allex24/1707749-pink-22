@@ -1,0 +1,51 @@
+// Post
+
+.post {
+  margin-top: 49px;
+}
+
+.post__content {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 52px;
+}
+
+.post__block {
+  padding: 0 20px;
+  background-color: $lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post__block-inputs {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+}
+
+.post__block-input {
+  margin-right: 35px;
+  padding: 42px 0 34px;
+}
+
+.post__block-input:last-child {
+  margin-right: 0;
+}
+
+.block-input__input--hidden {
+  display: none;
+}
+
+.post__block-button {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.post__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
