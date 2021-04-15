@@ -6,12 +6,28 @@
 }
 
 .itro__slogan {
+  height: 462px;
+  background-image: url(../img/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center bottom ;
+  background-size: cover;
+}
+
+.itro__slogan-content {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 91px;
+  color: $white;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  color: $white;
-  position: absolute;
-  top: 91px;
+  max-width: 280px;
+}
+
+.into__block-icon {
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
@@ -33,11 +49,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .block-icon__item {
   list-style-type: none;
+  margin-right: 35px;
   margin-bottom: 28px;
+}
+
+.block-icon__item:last-child {
+  margin-right: 0;
 }
 
 .block-icon__text {
@@ -46,4 +70,5 @@
   line-height: 24px;
   color: $white;
   padding-bottom: 38px;
+  margin: 0;
 }

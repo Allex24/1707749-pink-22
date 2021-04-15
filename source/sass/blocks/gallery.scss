@@ -10,17 +10,20 @@
   text-align: center;
 }
 
+.gallery__main-item {
+  position: relative;
+}
+
 
 .gallery__item--big {
   min-height: 137px;
   overflow: hidden;
-  position: relative;
 }
 
 .gallery__announce {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
 }
 
 .gallery__img--big {
@@ -42,7 +45,7 @@
   line-height: 24px;
   color: $white;
   background-color: $pink;
-  padding: 14px 20px;
+  padding: 6px 20px;
 }
 
 .gallery__block-aftor {
