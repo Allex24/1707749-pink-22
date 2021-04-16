@@ -1,0 +1,89 @@
+// Post
+
+.post {
+  margin-top: 49px;
+}
+
+.post__content {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 52px;
+}
+
+.post__block {
+  padding: 0 20px;
+  background-color: $lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post__block-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.post__block-inputs::after {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: $borderLightgrey;
+  bottom: 0;
+  left: -20px;
+}
+
+.post__block-input {
+  margin-right: 35px;
+  padding: 42px 0 75px;
+  position: relative;
+}
+
+.block-input__input--active {
+  position: absolute;
+  left: -24px;
+  bottom: 39px;
+}
+
+.block-input__icon--inactive {
+  color: $darkgrey;
+}
+
+.post__block-input:last-child {
+  margin-right: 0;
+}
+
+.block-input__input--hidden {
+  display: none;
+}
+
+
+.post__block-button {
+  display: flex;
+  flex-direction: column;
+  margin: 38px 0 41px;
+}
+
+
+.post__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 16px 88px;
+  border-radius: 30px;
+  margin: 0;
+}
+
+.post__button--activ{
+  margin-bottom: 12px;
+  border: 3px solid $pink;
+  color: $pink;
+}
+
+.post__button--inactive {
+  border: 3px solid $borderLightgrey;
+  color: $borderLightgrey;
+}
