@@ -3,6 +3,7 @@
 .intro {
   background: $bg-grey;
   position: relative;
+
 }
 
 .itro__slogan {
@@ -11,7 +12,19 @@
   background-repeat: no-repeat;
   background-position: center bottom ;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 729px;
+    background-image: url(../img/bg-intro-tablet.jpg);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 853px;
+    background-image: url(../img/bg-intro-desktop.jpg);
+  }
 }
+
+
 
 .itro__slogan-content {
   text-align: center;
@@ -22,12 +35,41 @@
   font-size: 24px;
   line-height: 29px;
   max-width: 280px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 240px;
+    position: absolute;
+    left: 50px;
+    top: 203px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    left: 160px;
+    top: 210px;
+  }
 }
 
 .into__block-icon {
   padding: 0 20px;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 110px;
+    bottom: 82px;
+  }
 }
 
 
@@ -43,6 +85,16 @@
   border: 3px solid $white;
   border-radius: 29px;
   padding: 16px 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    padding: 16px 28.5px;
+    margin-bottom: 65px;
+  }
 }
 
 .block-icon__list {
@@ -58,6 +110,15 @@
   list-style-type: none;
   margin-right: 35px;
   margin-bottom: 28px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .block-icon__item:last-child {
@@ -71,4 +132,9 @@
   color: $white;
   padding-bottom: 38px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+  font-size: 18px;
+  line-height: 24px;
+  }
 }
