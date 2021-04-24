@@ -4,6 +4,10 @@
   background-color: $lightgrey;
 }
 
+.price__container {
+  overflow: hidden;
+}
+
 .price__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
