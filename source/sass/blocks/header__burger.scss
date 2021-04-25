@@ -6,6 +6,10 @@
   border: none;
   background: transparent;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .header__burger span {

@@ -16,9 +16,13 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="header__logo">
-            <img src="img/logotype-mobile.svg" width="74" height="23" alt="Мобильное приложение «Пинк»">
-          </a>
+						<a class="header__logo">
+							<picture>
+								<source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logotype-tablet.svg">
+								<img src="img/logotype-mobile.svg" width="74" height="23" alt="Мобильное приложение «Пинк»">
+							</picture>
+						</a>
           <nav class="main-nav">
             <div class="header__burger">
               <span></span>
@@ -88,10 +92,10 @@
           <div class="advantages__inner">
             <h2 class="visually-hidden">Наши преимущества</h2>
               <div class="advantages__slogan-block">
-                <p class="slogan-block__cotent slogan-block__cotent-first">
+                <p class="slogan-block__content slogan-block__content-first">
                   Устали от серости мегаполиса?
                 </p>
-                <p class="slogan-block__cotent">
+                <p class="slogan-block__content">
                   Нам есть, что вам<br>
                   предложить!
                 </p>
@@ -99,37 +103,41 @@
               <div class="advantages__main-advantages">
                 <ul class="main-advantages__list">
                   <li class="main-advantages__item">
+                    <img class="main-advantages__item-image main-advantages__item-image--hidden" src="img/iphone_1.png" width="186" height="382" alt="изображение iphone-3">
                     <h3 class="main-advantages__item-title">
                       Поднимает настроение
                     </h3>
-                    <p class="main-advantages__item-cotent">
+                    <p class="main-advantages__item-content">
                       Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
                     </p>
-                    <img class="main-advantages__item-image main-advantages__item-image--hidden" src="img/iphone_1.png" width="186" height="382" alt="изображение iphone-3">
                   </li>
                   <li class="main-advantages__item">
+                    <img class="main-advantages__item-image main-advantages__item-image--hidden" src="img/iphone_2.png" width="186" height="382" alt="изображение iphone-3">
                     <h3 class="main-advantages__item-title">
                       Меняет мир вокруг
                     </h3>
-                    <p class="main-advantages__item-cotent">
+                    <p class="main-advantages__item-content">
                       Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
                     </p>
-                    <img class="main-advantages__item-image main-advantages__item-image--hidden" src="img/iphone_2.png" width="186" height="382" alt="изображение iphone-3">
                   </li>
                   <li class="main-advantages__item">
+                    <img class="main-advantages__item-image main-advantages__item-image--hidden" src="img/iphone_3.png" width="186" height="382" alt="изображение iphone-3">
                     <h3 class="main-advantages__item-title">
                       Заводит новых друзей
                     </h3>
-                    <p class="main-advantages__item-cotent">
+                    <p class="main-advantages__item-content">
                       Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
                     </p>
-                    <img class="main-advantages__item-image" src="img/iphone-3-mobile.png" width="157" height="320" alt="изображение iphone-3">
                   </li>
                 </ul>
+                  <img class="main-advantages__image main-advantages__image--mobile" src="img/iphone-3-mobile.png" width="157" height="320" alt="изображение iphone-3">
+                  <img class="main-advantages__image main-advantages__image--tablet" src="img/iphone3-tablet.png" width="268" height="547" alt="изображение iphone-3">
               </div> <!--advantages__main-advantages-->
 
+
               <div class="advantages__effect">
-                <img class="advantages__effect-image" src="img/timer.png" alt="секундомер" width="298" height="345">
+                <img class="advantages__effect-image advantages__effect-image--tablet" src="img/timer-tablet.png" alt="секундомер" width="238" height="276">
+                <img class="advantages__effect-image advantages__effect-image--desktop" src="img/timer.png" alt="секундомер" width="298" height="345">
 								<div class="advantages__effect-content">
 									<h class="effect-content__title">Эффект на 24 часа!</h>
 									<p class="effect-content__text">
@@ -163,7 +171,7 @@
 							</div>
 						</blockquote>
 
-						<blockquote class="reviews__item slider__item">
+						<blockquote class="reviews__item slider__item--hidden">
 							<div class="reviews__author-block">
 								<cite class="reviews__author-name">Николай Петров</cite>
 								<p class="reviews__text">
@@ -176,7 +184,7 @@
 							</div>
 						</blockquote>
 
-						<blockquote class="reviews__item slider__item">
+						<blockquote class="reviews__item slider__item--hidden">
 							<div class="reviews__author-block">
 								<cite class="reviews__author-name">Николай Петров</cite>
 								<p class="reviews__text">
@@ -201,13 +209,13 @@
 			</section>
 
 			<section class="price">
-				<div class="container">
+				<div class="price__container">
 					<h2 class="visually-hidden">Наши тарифы</h2>
 
 					<dl class="price__list">
 						<div class="price__item">
-							<dt class="price__number">
-								-
+							<dt class="price__number price__number--blank">
+
 							</dt>
 							<dd class="price__description">
 								<span class="price__description-text">Розовый фильтр</span>
@@ -226,46 +234,46 @@
 								<span class="price__number-cost">1,99 USD</span>
 							</dt>
 							<dd class="price__description">
-								<span class="price__description-text">Розовый фильтр</span>
-								<svg width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<span class="price__description-text price__description-text--hidden">Розовый фильтр</span>
+								<svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z" fill="#3DC644"/>
 									</svg>
 							</dd>
 							<dd class="price__description">
-								<span class="price__description-text">Смайлики</span>
-								<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<span class="price__description-text price__description-text--hidden">Смайлики</span>
+								<svg class="price__description-image" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M15.6444 13.5065L26.5531 2.58654C26.6947 2.44667 26.8071 2.28009 26.8838 2.09645C26.9605 1.91281 27 1.71577 27 1.51674C27 1.31772 26.9605 1.12068 26.8838 0.937041C26.8071 0.753403 26.6947 0.58682 26.5531 0.446952C26.268 0.165899 25.8837 0.00834432 25.4834 0.00834432C25.0831 0.00834432 24.6988 0.165899 24.4137 0.446952L13.505 11.3669L2.58626 0.446952C2.44641 0.305366 2.27984 0.192953 2.09622 0.11623C1.9126 0.0395068 1.71558 0 1.51658 0C1.31758 0 1.12056 0.0395068 0.936941 0.11623C0.753322 0.192953 0.586757 0.305366 0.446904 0.446952C0.165881 0.73209 0.00834343 1.11638 0.00834343 1.51674C0.00834343 1.91711 0.165881 2.3014 0.446904 2.58654L11.3657 13.5065L0.446904 24.4164C0.305333 24.5562 0.192932 24.7228 0.116217 24.9064C0.0395025 25.0901 0 25.2871 0 25.4861C0 25.6852 0.0395025 25.8822 0.116217 26.0658C0.192932 26.2495 0.305333 26.4161 0.446904 26.5559C0.730723 26.8394 1.11545 26.9987 1.51658 26.9987C1.91771 26.9987 2.30244 26.8394 2.58626 26.5559L13.505 15.6461L24.4137 26.5559C24.698 26.839 25.0823 26.9985 25.4834 27C25.7826 26.9997 26.075 26.9108 26.3237 26.7444C26.5724 26.5781 26.7662 26.3417 26.8806 26.0653C26.9951 25.7888 27.0251 25.4847 26.9668 25.1912C26.9085 24.8977 26.7645 24.6281 26.5531 24.4164L15.6444 13.5065Z" fill="#F25B26"/>
 									</svg>
 
 							</dd>
 							<dd class="price__description">
-								<span class="price__description-text">Комментарии</span>
-								<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<span class="price__description-text price__description-text--hidden">Комментарии</span>
+								<svg class="price__description-image" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M15.6444 13.5065L26.5531 2.58654C26.6947 2.44667 26.8071 2.28009 26.8838 2.09645C26.9605 1.91281 27 1.71577 27 1.51674C27 1.31772 26.9605 1.12068 26.8838 0.937041C26.8071 0.753403 26.6947 0.58682 26.5531 0.446952C26.268 0.165899 25.8837 0.00834432 25.4834 0.00834432C25.0831 0.00834432 24.6988 0.165899 24.4137 0.446952L13.505 11.3669L2.58626 0.446952C2.44641 0.305366 2.27984 0.192953 2.09622 0.11623C1.9126 0.0395068 1.71558 0 1.51658 0C1.31758 0 1.12056 0.0395068 0.936941 0.11623C0.753322 0.192953 0.586757 0.305366 0.446904 0.446952C0.165881 0.73209 0.00834343 1.11638 0.00834343 1.51674C0.00834343 1.91711 0.165881 2.3014 0.446904 2.58654L11.3657 13.5065L0.446904 24.4164C0.305333 24.5562 0.192932 24.7228 0.116217 24.9064C0.0395025 25.0901 0 25.2871 0 25.4861C0 25.6852 0.0395025 25.8822 0.116217 26.0658C0.192932 26.2495 0.305333 26.4161 0.446904 26.5559C0.730723 26.8394 1.11545 26.9987 1.51658 26.9987C1.91771 26.9987 2.30244 26.8394 2.58626 26.5559L13.505 15.6461L24.4137 26.5559C24.698 26.839 25.0823 26.9985 25.4834 27C25.7826 26.9997 26.075 26.9108 26.3237 26.7444C26.5724 26.5781 26.7662 26.3417 26.8806 26.0653C26.9951 25.7888 27.0251 25.4847 26.9668 25.1912C26.9085 24.8977 26.7645 24.6281 26.5531 24.4164L15.6444 13.5065Z" fill="#F25B26"/>
 									</svg>
 							</dd>
 						</div>
 
 						<div class="price__item price__item-hit">
-							<dt class="price__number">
+							<dt class="price__number price__number--hit">
 								<span class="price__number-tariff">Стандарт</span>
 								<span class="price__number-cost">3,99 USD</span>
 							</dt>
 							<dd class="price__description">
-								<span class="price__description-text">Розовый фильтр</span>
-								<svg width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<span class="price__description-text price__description-text--hidden">Розовый фильтр</span>
+								<svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z" fill="#3DC644"/>
 									</svg>
 							</dd>
 							<dd class="price__description">
-								<span class="price__description-text">Смайлики</span>
-								<svg width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<span class="price__description-text price__description-text--hidden">Смайлики</span>
+								<svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z" fill="#3DC644"/>
 									</svg>
 							</dd>
 							<dd class="price__description">
-								<span class="price__description-text">Комментарии</span>
-								<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<span class="price__description-text price__description-text--hidden">Комментарии</span>
+								<svg class="price__description-image" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M15.6444 13.5065L26.5531 2.58654C26.6947 2.44667 26.8071 2.28009 26.8838 2.09645C26.9605 1.91281 27 1.71577 27 1.51674C27 1.31772 26.9605 1.12068 26.8838 0.937041C26.8071 0.753403 26.6947 0.58682 26.5531 0.446952C26.268 0.165899 25.8837 0.00834432 25.4834 0.00834432C25.0831 0.00834432 24.6988 0.165899 24.4137 0.446952L13.505 11.3669L2.58626 0.446952C2.44641 0.305366 2.27984 0.192953 2.09622 0.11623C1.9126 0.0395068 1.71558 0 1.51658 0C1.31758 0 1.12056 0.0395068 0.936941 0.11623C0.753322 0.192953 0.586757 0.305366 0.446904 0.446952C0.165881 0.73209 0.00834343 1.11638 0.00834343 1.51674C0.00834343 1.91711 0.165881 2.3014 0.446904 2.58654L11.3657 13.5065L0.446904 24.4164C0.305333 24.5562 0.192932 24.7228 0.116217 24.9064C0.0395025 25.0901 0 25.2871 0 25.4861C0 25.6852 0.0395025 25.8822 0.116217 26.0658C0.192932 26.2495 0.305333 26.4161 0.446904 26.5559C0.730723 26.8394 1.11545 26.9987 1.51658 26.9987C1.91771 26.9987 2.30244 26.8394 2.58626 26.5559L13.505 15.6461L24.4137 26.5559C24.698 26.839 25.0823 26.9985 25.4834 27C25.7826 26.9997 26.075 26.9108 26.3237 26.7444C26.5724 26.5781 26.7662 26.3417 26.8806 26.0653C26.9951 25.7888 27.0251 25.4847 26.9668 25.1912C26.9085 24.8977 26.7645 24.6281 26.5531 24.4164L15.6444 13.5065Z" fill="#F25B26"/>
 									</svg>
 							</dd>
@@ -277,20 +285,20 @@
 								<span class="price__number-cost">9,99 USD</span>
 							</dt>
 							<dd class="price__description">
-								<span class="price__description-text">Розовый фильтр</span>
-								<svg width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<span class="price__description-text price__description-text--hidden">Розовый фильтр</span>
+								<svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z" fill="#3DC644"/>
 									</svg>
 							</dd>
 							<dd class="price__description">
-								<span class="price__description-text">Смайлики</span>
-								<svg width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<span class="price__description-text price__description-text--hidden">Смайлики</span>
+								<svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z" fill="#3DC644"/>
 									</svg>
 							</dd>
 							<dd class="price__description">
-								<span class="price__description-text">Комментарии</span>
-								<svg width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<span class="price__description-text price__description-text--hidden">Комментарии</span>
+								<svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z" fill="#3DC644"/>
 									</svg>
 							</dd>
@@ -312,15 +320,15 @@
 						Свяжитесь с нами!
 					</p>
 					<div class="contacts__block">
-						<div class="contacts__block-information">
+						<div class="contacts__block-information contacts__block-information--left">
 							<span class="block-information__text">Звоните:</span>
 							<a class="block-information__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
 						</div>
-						<div class="contacts__block-information">
+						<div class="contacts__block-information contacts__block-information--right">
 							<span class="block-information__text">Пишите:</span>
 							<a class="block-information__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 						</div>
-						<div class="contacts__block-information">
+						<div class="contacts__block-information contacts__block-information--center">
 							<span class="block-information__text">Приезжайте в гости:</span>
 							<a class="block-information__link" href="#">ул. Большая<br> Конюшенная, 19/8</a>
 						</div>
@@ -336,7 +344,10 @@
 		<footer class="footer">
 			<div class="footer__container">
         <div class="footer__logo">
-				  <img src="img/footer-logo.svg" alt="логотип компании Пинк">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/footer-logo.svg">
+            <img src="img/logotype-foter-mobile.svg" width="145" height="40" alt="Мобильное приложение «Пинк»">
+          </picture>
         </div>
 				<div class="footer__social-block">
 					<ul class="social-block__list">
