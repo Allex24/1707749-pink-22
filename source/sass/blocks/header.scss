@@ -78,3 +78,10 @@
     text-transform: none;
   }
 }
+
+.site-list__link--active {
+  border-bottom: 2px solid $lightgrey;
+  padding-bottom: 8px;
+}
+
+
