@@ -6,17 +6,39 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    min-height: 440px;
+    background-image: url(../img/form-bg-tablet.jpg);
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 395px;
+    background-image: url(../img/form-bg-desktop.jpg);
+  }
 }
 
 
 
 .intro__title {
+  display: block;
   margin: 0 auto;
   max-width: 228px;
-  padding-top: 102px;
+  padding-top: 94px;
   text-align: center;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 600px;
+    padding-top: 177px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 747px;
+    padding-top: 170px;
+  }
 }
