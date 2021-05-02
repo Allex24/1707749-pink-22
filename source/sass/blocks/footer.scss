@@ -2,7 +2,7 @@
 
 
 .footer {
-  padding: 40px 0;
+  padding: 36px 0;
 
   @media (min-width: $desktop-width) {
     padding: 70px 0;
@@ -32,6 +32,11 @@
 
 .footer__social-block {
   margin: 41px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
 
   @media (min-width: $desktop-width) {
     margin: 0;

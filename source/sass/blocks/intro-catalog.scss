@@ -6,16 +6,37 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    min-height: 440px;
+    background: url(../img/intro-catalog-tablet.jpg);
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 394px;
+    background: url(../img/intro-catalog-desktop.jpg);
+  }
 }
 
 
 .intro-catalog__title {
   margin: 0 auto;
   max-width: 228px;
-  padding-top: 102px;
+  padding-top: 94px;
   text-align: center;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 360px;
+    padding-top: 176px;
+  }
+
+  @media (min-width: $desktop-width) {
+      padding-top: 169px;
+  }
 }
