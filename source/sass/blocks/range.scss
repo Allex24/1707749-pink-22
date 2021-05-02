@@ -6,6 +6,14 @@ input[type=range] {
   width: 240px;
   height: 2px;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
 }
 
 input[type=range]::-webkit-slider-thumb {
