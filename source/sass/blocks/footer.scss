@@ -67,6 +67,16 @@
   border: 3px solid rgba(40, 54, 69, 0.1);
 }
 
+.social-block__link:hover {
+  border-color: $darkgrey;
+  transition: all .5s ease;
+}
+
+.social-block__link:active {
+  border-color: rgba(40, 54, 69, 0.1);
+  transition: all .5s ease;
+}
+
 .social-block__link svg {
   position: absolute;
   margin: auto;
@@ -74,6 +84,11 @@
   top: 0;
   bottom: 0;
   right: 0;
+}
+
+.social-block__link:active path {
+  opacity: 0.3;
+  transition: all .5s ease;
 }
 
 .copyright__text {
@@ -89,5 +104,16 @@
 .footer__copyright {
   display: flex;
   align-items: center;
+}
+
+.copyright__link svg:hover path{
+  fill: $darkgrey;
+  transition: all .3s ease;
+}
+
+.copyright__link svg:active path{
+  fill: $darkgrey;
+  opacity: 0.3;
+  transition: all .3s ease;
 }
 
