@@ -13,18 +13,18 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 1104px;
   transform: translate(-530px, 0);
-  padding: 81px 0 45px;
+  padding: 67px 0 25px;
 
   @media (min-width: $tablet-width) {
     transform: translate(0, 0);
     width: 620px;
     margin: 0 auto;
-    padding: 114px 0 70px;
+    padding: 98px 0 69px;
   }
 
 	@media (min-width: $desktop-width) {
     width: 940px;
-    padding: 160px 0 98px;
+    padding: 158px 0 98px;
   }
 }
 
@@ -143,8 +143,12 @@
 	}
 }
 
-.reviews__toggles {
+.reviews__toggles-price {
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.reviews__toggles-price {
+  margin-bottom: 46px;
 }
