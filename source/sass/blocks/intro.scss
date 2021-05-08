@@ -9,18 +9,31 @@
 .itro__slogan {
   height: 462px;
   background-image: url(../img/bg-intro-mobile.png);
+  background-color: $bg-grey;
   background-repeat: no-repeat;
   background-position: center bottom ;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/bg-intro-mobile@2x.png);
+  }
+
   @media (min-width: $tablet-width) {
     height: 728px;
     background-image: url(../img/bg-intro-tablet.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-intro-tablet@2x.jpg);
+    }
   }
 
   @media (min-width: $desktop-width) {
     height: 853px;
     background-image: url(../img/bg-intro-desktop.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/bg-intro-desktop@2x.jpg);
+    }
   }
 }
 
