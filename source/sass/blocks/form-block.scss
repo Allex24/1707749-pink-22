@@ -71,6 +71,18 @@
   padding: 15px 20px;
   border: 2px solid $borderGrey;
   border-radius: 1px;
+  cursor: pointer;
+  outline: none;
+}
+
+.contact-input__input:hover,
+.contact-input__input:focus {
+  border-color: $darkgrey;
+  transition: all .3s ease;
+}
+
+.contact-input__input:active{
+  border-color: $pink;
 }
 
 .form-block__legend {
@@ -295,15 +307,15 @@
     content: '';
     position: absolute;
     display: block;
-    width: 62px;
-    height: 62px;
+    width: 60px;
+    height: 60px;
     background-color: $borderGrey;
     right: 62px;
-    top: 0;
+    top: 2px;
   }
 
   @media (min-width: $desktop-width) {
-    right: 0;
+    right: 2px;
   }
  }
 
@@ -455,6 +467,17 @@
   }
 }
 
+input[type=radio] + label:hover::before,
+input[type=checkbox] + label:hover::before {
+  border-color: $darkgrey;
+  transition: all .3s ease;
+}
+
+input[type=radio]:checked + label::before,
+input[type=checkbox]:checked + label::before {
+  border-color: $pink;
+}
+
 .form-block__input-radio:checked + label::after {
   content: '';
   width: 15px;
@@ -550,6 +573,21 @@
   @media (min-width: $tablet-width) {
     width: 300px;
   }
+}
+
+.button:hover {
+  background-color: $bgButtonHover;
+  transition: all .3s ease;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $bgButtonDown;
+}
+
+.button:disabled {
+  background-color: $borderGrey;
+  border-color: $borderGrey;
 }
 
 .attention__content {
