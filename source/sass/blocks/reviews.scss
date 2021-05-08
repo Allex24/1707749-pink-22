@@ -91,7 +91,14 @@
   position: absolute;
   right: -130px;
   top: 30px;
+  cursor: pointer;
   }
+}
+
+.reviews__item:hover::after,
+.reviews__item:hover::before{
+  opacity: 0.6;
+  transition: all .3s ease;
 }
 
 .reviews__item::before {
@@ -104,6 +111,7 @@
   position: absolute;
   left: -130px;
   top: 30px;
+  cursor: pointer;
   }
 }
 

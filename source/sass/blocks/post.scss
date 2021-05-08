@@ -209,8 +209,30 @@
   }
 }
 
+.post__button--activ:hover {
+  background-color: $pink;
+  color: $white;
+  transition: all .3s ease;
+}
+
+.post__button--activ:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .post__button--inactive {
   border: 3px solid $borderLightgrey;
   color: $borderLightgrey;
+}
 
+.post__button--inactive:hover {
+  color: rgba(40, 54, 69, 0.3);
+  border-color: rgba(40, 54, 69, 0.3);
+  transition: all .3s ease;
+}
+
+.post__button--inactive:active {
+  color: rgba(40, 54, 69, 0.3);
+  background-color: rgba(40, 54, 69, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+  border: none;
 }
