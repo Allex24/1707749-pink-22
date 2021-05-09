@@ -6,15 +6,28 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  background-color: $darkgrey;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/intro-catalog-mobile@2.jpg);
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 440px;
     background: url(../img/intro-catalog-tablet.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/intro-catalog-tablet@2.jpg);
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 394px;
     background: url(../img/intro-catalog-desktop.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/intro-catalog-desktop@2.jpg);
+    }
   }
 }
 
