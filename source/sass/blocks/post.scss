@@ -136,8 +136,74 @@
 }
 
 .post__block-picture {
+  cursor: pointer;
+  &:hover {
+    fill: $darkgrey;
+    opacity: 0.5;
+    transition: all .3s ease;
+  }
+
+  &:active {
+    fill: $pink;
+    opacity: 1;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 20px;
+  }
+}
+
+.crop-icon {
+  width: 44px;
+  height: 44px;
+  fill: $pink;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.fill-icon {
+  width: 48px;
+  height: 43px;
+  fill: $darkgrey;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+    fill: $pink;
+    opacity: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.contrast-icon {
+  width: 32px;
+  height: 32px;
+  fill: $darkgrey;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+    fill: $pink;
+    opacity: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
   }
 }
 
