@@ -1,99 +1,82 @@
 // Header
-
 .header {
-  background-color: $bg-header;
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-  }
-
-  &__inner {
-    padding: 0 20px;
-    min-height: 66px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media (min-width: $tablet-width) {
-      min-height: 110px;
-    }
-
+    background-color: $bg-header;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
     @media (min-width: $desktop-width) {
-      padding: 0 130px;
+        position: absolute;
     }
-  }
+    &__inner {
+        padding: 0 20px;
+        min-height: 66px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (min-width: $tablet-width) {
+            min-height: 110px;
+        }
+        @media (min-width: $desktop-width) {
+            padding: 0 130px;
+        }
+    }
 }
 
 .header__logo svg {
-  position: relative;
-  z-index: 101;
-
-  &:hover{
-    fill: $pink;
-    transition: all .3s ease;
-  }
-
-  &:active {
-    fill: $white;
-    opacity: 0.3;
-  }
+    position: relative;
+    z-index: 101;
+    &:hover {
+        fill: $pink;
+        transition: all .3s ease;
+    }
+    &:active {
+        fill: $white;
+        opacity: 0.3;
+    }
 }
 
 .header__logo-mobile {
-  display: block;
-  width: 74px;
-  height: 23px;
-  fill: $white;
-
-
-@media (min-width: $tablet-width) {
-    display: none;
-  }
+    display: block;
+    width: 74px;
+    height: 23px;
+    fill: $white;
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
 }
 
 .header__logotype-tablet {
-  display: block;
-  width: 145px;
-  height: 40px;
-  fill: $white;
-
-  @media (max-width: $mobile-width-only) {
-    display: none;
-
-  }
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+    display: block;
+    width: 145px;
+    height: 40px;
+    fill: $white;
+    @media (max-width: $mobile-width-only) {
+        display: none;
+    }
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
 }
 
 .header__logotype-desktop {
-  width: 147px;
-  height: 40px;
-  fill: $white;
-
-    &:hover{
-      fill: $pink;
-      transition: all .3s ease;
+    width: 147px;
+    height: 40px;
+    fill: $white;
+    &:hover {
+        fill: $pink;
+        transition: all .3s ease;
     }
-
     &:active {
-      fill: $white;
-      opacity: 0.3;
+        fill: $white;
+        opacity: 0.3;
     }
-
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
+    @media (max-width: $mobile-width-only) {
+        display: none;
+    }
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+    @media (min-width: $desktop-width) {
+        display: block;
+    }
 }
-
-

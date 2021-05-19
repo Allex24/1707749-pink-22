@@ -1,164 +1,145 @@
 // Footer
-
-
 .footer {
-  padding: 36px 0;
-
-  @media (min-width: $desktop-width) {
-    padding: 70px 0;
-  }
+    padding: 36px 0;
+    @media (min-width: $desktop-width) {
+        padding: 70px 0;
+    }
 }
 
-
 .footer__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    width: 940px;
-    margin: 0 auto;
-  }
+    padding: 0 20px;
+    @media (min-width: $tablet-width) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @media (min-width: $desktop-width) {
+        padding: 0;
+        width: 940px;
+        margin: 0 auto;
+    }
 }
 
 .footer__social-block {
-  margin: 41px 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-  }
+    margin: 41px 0;
+    @media (min-width: $tablet-width) {
+        margin: 0;
+    }
+    @media (min-width: $desktop-width) {
+        margin: 0;
+    }
 }
 
 .social-block__list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 190px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 190px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-.social-block__item{
-  list-style-type: none;
+.social-block__item {
+    list-style-type: none;
 }
 
 .social-block__link {
-  display: block;
-  position: relative;
-  height: 54px;
-  width: 54px;
-  text-align: center;
-  border-radius: 50%;
-  border: 3px solid rgba(40, 54, 69, 0.1);
+    display: block;
+    position: relative;
+    height: 54px;
+    width: 54px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid rgba(40, 54, 69, 0.1);
 }
 
 .social-block__link-svg {
-  fill: $pink;
+    fill: $pink;
 }
 
 .social-block__link:hover {
-  border-color: $darkgrey;
-  transition: all .3s ease;
+    border-color: $darkgrey;
+    transition: all .3s ease;
 }
 
-.social-block__link:active .social-block__link-svg{
-  opacity: 0.3;
+.social-block__link:active .social-block__link-svg {
+    opacity: 0.3;
 }
 
 .social-block__link:active {
-  border-color: rgba(40, 54, 69, 0.1);
+    border-color: rgba(40, 54, 69, 0.1);
 }
 
-
 .social-block__link svg {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .copyright__text {
-  font-size: 14px;
-  line-height: 18px;
-  margin-right: 15px;
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-  }
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 15px;
+    @media (min-width: $desktop-width) {
+        font-size: 18px;
+    }
 }
 
 .footer__copyright {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
-
 .copyright__link-svg {
-  width: 27px;
-  height: 34px;
-  fill: $pink;
-
-  &:hover {
-    fill: $darkgrey;
-    transition: all .3s ease;
-  }
-
-  &:active {
-    fill: $darkgrey;
-    opacity: 0.3;
-  }
+    width: 27px;
+    height: 34px;
+    fill: $pink;
+    &:hover {
+        fill: $darkgrey;
+        transition: all .3s ease;
+    }
+    &:active {
+        fill: $darkgrey;
+        opacity: 0.3;
+    }
 }
 
 .footer__logo-svg {
-  width: 145px;
-  height: 40px;
-  fill: $darkgrey;
-  cursor: pointer;
-
-  &:hover {
-    fill: $pink;
-    transition: all .3s ease;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+    width: 145px;
+    height: 40px;
+    fill: $darkgrey;
+    cursor: pointer;
+    &:hover {
+        fill: $pink;
+        transition: all .3s ease;
+    }
+    &:active {
+        opacity: 0.3;
+    }
 }
 
 .footer__logo-svg--tablet {
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
 }
 
 .footer__logo-svg--desktop {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-
-  }
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
+    @media (max-width: $mobile-width-only) {
+        display: none;
+    }
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+    @media (min-width: $desktop-width) {
+        display: block;
+    }
 }
-

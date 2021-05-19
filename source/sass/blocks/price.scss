@@ -1,182 +1,169 @@
 // Price
-
 .price {
-  background-color: $lightgrey;
-  position: relative;
+    background-color: $lightgrey;
+    position: relative;
 }
 
 .price:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 18px;
-  bottom: 100%;
-  left: 0;
-  background: linear-gradient(to right bottom, transparent 48%, #F2F2F2 50%) right / 100% 100% no-repeat;
-  z-index: 2;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 18px;
+    bottom: 100%;
+    left: 0;
+    background: linear-gradient(to right bottom, transparent 48%, #F2F2F2 50%) right / 100% 100% no-repeat;
+    z-index: 2;
 }
 
-
 @media (min-width: 660px) {
-  .price:before {
-    height: 41px;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to left top, transparent 48%, #ffffff 50%) left / 100% 100% no-repeat;
-  }
+    .price:before {
+        height: 41px;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to left top, transparent 48%, #ffffff 50%) left / 100% 100% no-repeat;
+    }
 }
 
 @media (min-width: 1200px) {
-  .price:before {
-     height: 98px;
-  }
- }
+    .price:before {
+        height: 98px;
+    }
+}
 
 .price__container {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .price__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 1104px;
-  transform: translate(-530px, 0);
-  padding: 67px 0 25px;
-
-  @media (min-width: $tablet-width) {
-    transform: translate(0, 0);
-    width: 620px;
-    margin: 0 auto;
-    padding: 98px 0 69px;
-  }
-
-	@media (min-width: $desktop-width) {
-    width: 940px;
-    padding: 158px 0 98px;
-  }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1104px;
+    transform: translate(-530px, 0);
+    padding: 67px 0 25px;
+    @media (min-width: $tablet-width) {
+        transform: translate(0, 0);
+        width: 620px;
+        margin: 0 auto;
+        padding: 98px 0 69px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 940px;
+        padding: 158px 0 98px;
+    }
 }
 
 .price__number {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid $borderGrey;
-  height: 96px;
-
-  @media (min-width: $tablet-width) {
-    height: 77px;
-  }
-
-	@media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $borderGrey;
     height: 96px;
-  }
+    @media (min-width: $tablet-width) {
+        height: 77px;
+    }
+    @media (min-width: $desktop-width) {
+        height: 96px;
+    }
 }
 
 .price__description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: $white;
-  margin: 0;
-  width: 276px;
-  height: 61px;
-  border: 2px solid $borderGrey;
-
-  @media (min-width: $tablet-width) {
-    height: 47px;
-    width: 155px;
-  }
-
-  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $white;
+    margin: 0;
+    width: 276px;
     height: 61px;
-    width: 235px;
-  }
+    border: 2px solid $borderGrey;
+    @media (min-width: $tablet-width) {
+        height: 47px;
+        width: 155px;
+    }
+    @media (min-width: $desktop-width) {
+        height: 61px;
+        width: 235px;
+    }
 }
 
 .price__description-text--hidden {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
 }
 
 .price__description-text {
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin-left: 20px;
-
-  @media (min-width: $tablet-width) {
-    text-transform: none;
-  }
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    @media (min-width: $tablet-width) {
+        text-transform: none;
+    }
 }
 
-
 .price__description-image {
-  margin-right: 16px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-  }
+    margin-right: 16px;
+    @media (min-width: $tablet-width) {
+        margin: 0 auto;
+    }
 }
 
 .price__number {
-  background-color: $darkgrey;
+    background-color: $darkgrey;
 }
 
 .price__number-tariff {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: $white;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
 }
 
 .price__number-cost {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: $white;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $white;
 }
 
 .price__number--blank {
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 }
 
 .price__item-hit {
-  position: relative;
+    position: relative;
 }
 
 .price__item-hit::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/hit-ribbon.png);
-  width: 74px;
-  height: 74px;
-  left: 2px;
-  top: 2px;
-
-	@media (min-width: $tablet-width) {
-		background-image: url(../img/hit-ribbon-tablet.png);
-  	width: 61px;
-  	height: 61px;
-	}
-
-	@media (min-width: $desktop-width) {
-		background-image: url(../img/hit-ribbon.png);
-		width: 74px;
-		height: 74px;
-	}
+    content: "";
+    position: absolute;
+    background-image: url(../img/hit-ribbon.png);
+    width: 74px;
+    height: 74px;
+    left: 2px;
+    top: 2px;
+    @media (min-width: $tablet-width) {
+        background-image: url(../img/hit-ribbon-tablet.png);
+        width: 61px;
+        height: 61px;
+    }
+    @media (min-width: $desktop-width) {
+        background-image: url(../img/hit-ribbon.png);
+        width: 74px;
+        height: 74px;
+    }
 }
 
 .reviews__toggles-price {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
 }
 
 .reviews__toggles-price {
-  margin-bottom: 46px;
+    margin-bottom: 46px;
 }

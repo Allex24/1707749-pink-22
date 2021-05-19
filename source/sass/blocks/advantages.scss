@@ -26,7 +26,7 @@
   background: linear-gradient(to right bottom, transparent 48%, #F2F2F2 50%) right / 100% 100% no-repeat;
 }
 
- @media (min-width: 660px) {
+@media (min-width: 660px) {
   .advantages__main-advantages:before {
     height: 52px;
     top: 0;
@@ -39,7 +39,7 @@
   .advantages__main-advantages:before {
     height: 98px;
   }
- }
+}
 
 
 .advantages__slogan-block {
@@ -49,12 +49,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 47px 0 30px;
-   }
+  }
 
   @media (min-width: $desktop-width) {
     padding: 62px 0 51px;
   }
- }
+}
 
 .slogan-block__content {
   font-weight: 300;
@@ -141,7 +141,7 @@
     opacity: 0.3;
     filter: blur(4px);
   }
- }
+}
 
 .main-advantages__list {
   margin: 0;
@@ -159,7 +159,7 @@
     justify-content: flex-start;
     padding: 0;
     margin: 0 0 59px;
-   }
+  }
 }
 
 
@@ -178,7 +178,7 @@
     line-height: 30px;
     display: block;
     min-width: 252px;
-   }
+  }
 }
 
 
