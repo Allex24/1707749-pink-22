@@ -1,7 +1,7 @@
 // Header
 .header {
     background-color: $bg-header;
-    position: fixed;
+    position: relative;
     z-index: 100;
     width: 100%;
     @media (min-width: $desktop-width) {
@@ -32,6 +32,9 @@
     &:active {
         fill: $white;
         opacity: 0.3;
+    }
+    @media (min-width: $tablet-width) {
+        margin-bottom: 16px;
     }
 }
 
@@ -78,5 +81,11 @@
     }
     @media (min-width: $desktop-width) {
         display: block;
+    }
+}
+
+.main-nav {
+    @media (min-width: $desktop-width) {
+        margin-bottom: 20px;
     }
 }

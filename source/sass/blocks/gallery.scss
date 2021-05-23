@@ -73,7 +73,7 @@
     }
 }
 
-.main-foto__img {
+.gallery__main-foto-img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -134,7 +134,7 @@
     }
 }
 
-.gallery__block-aftorr--main {
+.gallery__block-aftor--main {
     @media (min-width: $tablet-width) {
         display: flex;
         flex-direction: row;
@@ -183,7 +183,7 @@
     }
 }
 
-.foto-like__link-number {
+.gallery__link-number {
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;
@@ -196,13 +196,13 @@
     }
 }
 
-.foto-like__link-like {
+.gallery__link-like {
     @media (min-width: $tablet-width) {
         order: 2;
     }
 }
 
-.link-like__svg {
+.gallery__link-like-svg {
     width: 13px;
     height: 12px;
     fill: $pink;

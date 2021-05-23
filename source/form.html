@@ -33,17 +33,13 @@
                 <nav class="main-nav">
 
                     <div class="hamburger-menu">
+                        <button class="hamburger-menu__button" type="button"></button>
 
-                        <input class="menu__toggle" id="menu__toggle" type="checkbox">
-                        <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-
-                        <ul class="menu__box">
-                            <li><a class="menu__item" href="index.html">Главная</a></li>
-                            <li><a class="menu__item" href="catalog.html">Фотографии</a></li>
-                            <li><a class="menu__item menu__item--active" href="#">Конкурс</a></li>
-                            <li><a class="menu__item" href="https://htmlacademy.ru/">HTML Academy</a></li>
+                        <ul class="hamburger-menu__box">
+                            <li><a class="hamburger-menu__item" href="index.html">Главная</a></li>
+                            <li><a class="hamburger-menu__item" href="catalog.html">Фотографии</a></li>
+                            <li><a class="hamburger-menu__item hamburger-menu__item--active" href="#">Конкурс</a></li>
+                            <li><a class="hamburger-menu__item" href="https://htmlacademy.ru/">HTML Academy</a></li>
                         </ul>
                     </div>
 
@@ -59,7 +55,7 @@
         <!--INTRO-->
         <section class="intro-form">
             <div class="wrapper">
-                <h1 class="intro__title">
+                <h1 class="intro-form__title">
                     Конкурс на самое безбашенное путешествие с Пинк
                 </h1>
             </div>
@@ -69,7 +65,7 @@
         <section class="form-block">
             <div class="form-block__wrapper">
                 <p class="form-block__content">
-                    Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form-block__content--hidden">Пожалуйста, заполните форму ниже:</span>
+                    Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form-block__text-hidden">Пожалуйста, заполните форму ниже:</span>
                 </p>
 
                 <form class="form-block__form" method="get" action="https://echo.htmlacademy.ru">
@@ -91,9 +87,9 @@
 
                     </div>
 
-                    <div class="form-block__form-contacts form-block__form-color form-block__form--checkbox">
+                    <div class="form-block__form-contacts form-block__form-color form-block__form-checkbox">
                         <fieldset class="form-block__fieldset">
-                            <legend class="form-block__legend legend--checkbox">Ваши безбашенные достижения в путешествии</legend>
+                            <legend class="form-block__legend legend-checkbox">Ваши безбашенные достижения в путешествии</legend>
 
                             <ul class="form-block__list form-block__list--checkbox">
 
@@ -107,12 +103,12 @@
                                     <label for="on-beach">Обгорел на пляже</label>
                                 </li>
 
-                                <li class="form-block__item form-block__item-checkbox">
+                                <li class="form-block__item form-block__item-checkbox item-checkbox-center">
                                     <input class="visually-hidden form-block__input-checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
                                     <label for="chuck-norris">Видел Чака Норриса</label>
                                 </li>
 
-                                <li class="form-block__item form-block__item-checkbox">
+                                <li class="form-block__item form-block__item-checkbox item-checkbox-center">
                                     <input class="visually-hidden form-block__input-checkbox" type="checkbox" name="souvenirs" id="souvenirs">
                                     <label for="souvenirs">Накупил сувениров</label>
                                 </li>
@@ -130,19 +126,19 @@
                         </fieldset>
                     </div>
 
-                    <div class="form-block__form-contacts form-contacts--phone">
+                    <div class="form-block__form-contacts form-contacts-phone">
                         <fieldset class="form-block__fieldset form-block__fieldset--phone">
                             <legend class="form-block__legend legen-hidden form-block__legend--phone">
                                 Контактная информация
                             </legend>
-                            <div class="contact-input--phone-block">
-                                <div class="contact-input contact-input--phone contact-input--user-phone">
+                            <div class="contact-input-phone-block">
+                                <div class="contact-input contact-input-phone contact-input--user-phone">
                                     <label class="contact-input__label contact-input__label--phone" for="user-contacts-phone">Номер
                     телефона</label>
-                                    <input class="contact-input__input contact-input__input--phone" type="text" id="user-contacts-phone" name="user-contacts-phone" placeholder="Номер, пожалуйста">
+                                    <input class="contact-input__input contact-input__input--phone" type="tel" id="user-contacts-phone" name="user-contacts-phone" placeholder="Номер, пожалуйста">
                                 </div>
 
-                                <div class="contact-input contact-input--phone contact-input--user-email">
+                                <div class="contact-input contact-input-phone contact-input--user-email">
                                     <label class="contact-input__label contact-input__label--phone" for="user-contacts-email">Адресс
                     почты</label>
                                     <input class="contact-input__input contact-input__input--phone" type="email" id="user-contacts-email" name="user-contacts-email" placeholder="Введите почту *" required>
@@ -151,10 +147,10 @@
                         </fieldset>
                     </div>
 
-                    <div class="form-block__form-contacts half-size-form form-block__form-color form-block__form--radio">
+                    <div class="form-block__form-contacts half-size-form form-block__form-color form-block__form-radio">
 
-                        <fieldset class="form-block__fieldset form-block__fieldset--radio">
-                            <legend class="form-block__legend form-block__legend--radio">
+                        <fieldset class="form-block__fieldset form-block__fieldset-radio">
+                            <legend class="form-block__legend form-block__legend-radio">
                                 С каким приложением путешествовали?
                             </legend>
 
@@ -178,10 +174,10 @@
                         </fieldset>
                     </div>
 
-                    <div class="form-block__form-contacts form-block__form--textarea">
+                    <div class="form-block__form-contacts form-block__form-textarea">
 
-                        <fieldset class="form-block__fieldset form-block__fieldset--textarea">
-                            <legend class="form-block__legend form-block__legend--textarea">
+                        <fieldset class="form-block__fieldset form-block__fieldset-textarea">
+                            <legend class="form-block__legend form-block__legend-textarea">
                                 Опишите свои эмоции
                             </legend>
                             <textarea class="contact-input__input contact-input__input--center" id="your-emotion" name="content" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -195,34 +191,34 @@
                         </div>
 
                         <div class="form-block__attention">
-                            <p class="attention__content">
-                                <span class="content__star">*</span> — Обязательные <span class="attention__content-hidden">для
+                            <p class="form-block__attention-content">
+                                <span class="form-block__attention-star">*</span> — Обязательные <span class="form-block__attention-hidden">для
                   заполнения</span> поля
                             </p>
                         </div>
                     </div>
                 </form>
 
-                <div class="form__popup form__popup-invalid visually-hidden">
-                    <div class="popup__information popup__information--invalid">
-                        <h3 class="popup__title popup__title--invalid">Что-то пошло не так!</h3>
-                        <p class="popup__text popup__text--invalid">
+                <div class="form-block__popup form-block__popup-invalid visually-hidden">
+                    <div class="popup-information popup-information--invalid">
+                        <h3 class="popup-title popup-title--invalid">Что-то пошло не так!</h3>
+                        <p class="popup-text popup-text--invalid">
                             Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
                         </p>
                     </div>
-                    <div class="popup__block-btn popup__block-btn--invalid">
-                        <button class="button popup__button--invalid" type="submit">ok</button>
+                    <div class="popup-block-btn popup-block-btn--invalid">
+                        <button class="button popup-button-invalid" type="submit">ok</button>
                     </div>
                 </div>
 
-                <div class="form__popup form__popup-valid visually-hidden">
-                    <div class="popup__information popup__information--valid">
-                        <h3 class="popup__title popup__title--valid">Ваша заявка отправлена</h3>
-                        <p class="popup__text popup__text--valid">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
+                <div class="form-block__popup form-block__popup-valid visually-hidden">
+                    <div class="popup-information popup-information--valid">
+                        <h3 class="popup-title popup-title--valid">Ваша заявка отправлена</h3>
+                        <p class="popup-text popup-text--valid">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
                         </p>
                     </div>
-                    <div class="popup__block-btn popup__block-btn--valid">
-                        <button class="button popup__button--valid" type="submit">Закрыть окно</button>
+                    <div class="popup-block-btn popup-block-btn-valid">
+                        <button class="button popup-button-valid" type="submit">Закрыть окно</button>
                     </div>
                 </div>
             </div>
@@ -233,39 +229,40 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__logo">
-                <svg class="footer__logo-svg footer__logo-svg--tablet">
-          <use xlink:href="img/sprite.svg#foter-logotype"></use>
-        </svg>
+                <a href="index.html">
+                    <svg class="footer__logo-svg footer__logo-svg--tablet">
+        <use xlink:href="img/sprite.svg#foter-logotype"></use>
+      </svg>
 
-                <svg class="footer__logo-svg footer__logo-svg--desktop">
-          <use xlink:href="img/sprite.svg#foter-logotype-desktop"></use>
-        </svg>
-
+                    <svg class="footer__logo-svg footer__logo-svg--desktop">
+        <use xlink:href="img/sprite.svg#foter-logotype-desktop"></use>
+      </svg>
+                </a>
             </div>
             <div class="footer__social-block">
-                <ul class="social-block__list">
-                    <li class="social-block__item">
-                        <a href="#" class="social-block__link" aria-label="Твитер">
-                            <svg class="social-block__link-svg" width="18" height="14" role="img" aria-label="логотип компании «Твитер»">
-                <use xlink:href="img/sprite.svg#twitter"></use>
-              </svg>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" aria-label="Твитер">
+                            <svg class="footer__link-svg" width="18" height="14" role="img" aria-label="логотип компании «Твитер»">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
                         </a>
                     </li>
 
-                    <li class="social-block__item">
-                        <a href="#" class="social-block__link" aria-label="Фейсбук">
-                            <svg class="social-block__link-svg" width="9" height="18" role="img" aria-label="логотип компании «Фейсбук»">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" aria-label="Фейсбук">
+                            <svg class="footer__link-svg" width="9" height="18" role="img" aria-label="логотип компании «Фейсбук»">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
 
                         </a>
                     </li>
 
-                    <li class="social-block__item">
-                        <a href="#" class="social-block__link" aria-label="Ютуб">
-                            <svg class="social-block__link-svg" width="15" height="13" role="img" aria-label="логотип компании «Ютуб»">
-                <use xlink:href="img/sprite.svg#youtube"></use>
-              </svg>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link" aria-label="Ютуб">
+                            <svg class="footer__link-svg" width="15" height="13" role="img" aria-label="логотип компании «Ютуб»">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
                         </a>
                     </li>
                 </ul>
@@ -275,8 +272,8 @@
                 <span class="copyright__text">Разработано:</span>
                 <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                     <svg class="copyright__link-svg">
-            <use xlink:href="img/sprite.svg#icon_html-academy"></use>
-          </svg>
+          <use xlink:href="img/sprite.svg#icon_html-academy"></use>
+        </svg>
                 </a>
             </div>
 

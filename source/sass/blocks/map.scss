@@ -1,13 +1,13 @@
-// Contacts__map
+// map
 .contacts__map {
     overflow: hidden;
     padding-bottom: 68%;
     position: relative;
     height: 0;
     @media (min-width: $tablet-width) {
-        padding-bottom: 55%;
+        padding-bottom: 56%;
     }
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
         padding-bottom: 41%;
     }
 }

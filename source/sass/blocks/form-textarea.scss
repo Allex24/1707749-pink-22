@@ -1,0 +1,40 @@
+// form-block__form-textarea
+.form-block__form-textarea {
+    padding: 0 20px;
+    margin: 38px 0 45px;
+    @media (min-width: $tablet-width) {
+        order: 5;
+        margin: 52px 0 65px;
+    }
+    @media (min-width: $desktop-width) {
+        padding: 0;
+        width: 940px;
+        margin: 52px 0 62px;
+    }
+}
+
+.form-block__legend-textarea {
+    margin: 0 auto 16px;
+    @media (min-width: $tablet-width) {
+        margin-bottom: 32px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-bottom: 27px;
+    }
+}
+
+.contact-input__input--center {
+    width: 100%;
+    min-height: 200px;
+    padding: 13px 0 0 20px;
+    @media (min-width: $tablet-width) {
+        min-height: 189px;
+        width: 496px;
+        margin: 0 60px 51px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 820px;
+        min-height: 124px;
+        margin: 0 60px 44px;
+    }
+}

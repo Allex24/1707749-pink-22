@@ -20,7 +20,7 @@
     @media (min-width: $desktop-width) {
         font-size: 50px;
         line-height: 68px;
-        margin: 58px 0 40px;
+        margin: 65px 0 40px;
     }
 }
 
@@ -31,7 +31,7 @@
 }
 
 .contacts__block-information {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     @media (min-width: $tablet-width) {
@@ -42,18 +42,12 @@
     }
 }
 
-.contacts__block-information:first-child {
-    @media (min-width: $tablet-width) {
-        margin-right: 97px;
-    }
-    @media (min-width: $desktop-width) {
-        margin-right: 111px;
-    }
-}
-
 .contacts__block-information:last-child {
     @media (min-width: $tablet-width) {
         margin-bottom: 30px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-bottom: 22px;
     }
 }
 
@@ -66,17 +60,22 @@
 .contacts__block-information--center {
     @media (min-width: $desktop-width) {
         order: 2;
-        margin-right: 94px;
+        margin: 0 77px 0 111px;
     }
 }
 
 .contacts__block-information--right {
+    @media (min-width: $tablet-width) {
+        margin: 0px -17px 0 99px;
+    }
     @media (min-width: $desktop-width) {
         order: 3;
+        margin: 0;
+        transform: translate(18px);
     }
 }
 
-.block-information__text {
+.contacts__block-text {
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
@@ -85,19 +84,19 @@
     }
 }
 
-.block-information__link {
+.contacts__block-link {
     font-weight: 300;
     font-size: 24px;
     line-height: 33px;
     color: $pink;
 }
 
-.block-information__link:hover {
+.contacts__block-link:hover {
     color: $darkgrey;
     transition: all .3s ease;
 }
 
-.block-information__link:active {
+.contacts__block-link:active {
     color: #bfc3c7;
     transition: all .3s ease;
 }

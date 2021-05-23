@@ -1,0 +1,45 @@
+// form-block__form-button
+.form-block__form-button {
+    padding: 0 20px;
+    @media (min-width: $tablet-width) {
+        order: 6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @media (min-width: $desktop-width) {
+        width: 940px;
+        padding: 0;
+    }
+}
+
+.button {
+    width: 280px;
+    height: 65px;
+    color: $white;
+    text-transform: uppercase;
+    background-color: $bgButton;
+    border: 2px solid $bgButton;
+    border-radius: 1px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+    @media (min-width: $tablet-width) {
+        width: 300px;
+    }
+}
+
+.button:hover {
+    background-color: $bgButtonHover;
+    transition: all .3s ease;
+}
+
+.button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $bgButtonDown;
+}
+
+.button:disabled {
+    background-color: $borderGrey;
+    border-color: $borderGrey;
+}

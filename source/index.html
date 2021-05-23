@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a class="header__logo" href="index.html">
+                <a class="header__logo" href="#">
                     <svg class="header__logo-mobile">
             <use xlink:href="img/sprite.svg#logotype-mobile"></use>
           </svg>
@@ -34,17 +34,13 @@
                 <nav class="main-nav">
 
                     <div class="hamburger-menu">
+                        <button class="hamburger-menu__button" type="button"></button>
 
-                        <input class="menu__toggle" id="menu__toggle" type="checkbox">
-                        <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-
-                        <ul class="menu__box">
-                            <li><a class="menu__item">Главная</a></li>
-                            <li><a class="menu__item" href="catalog.html">Фотографии</a></li>
-                            <li><a class="menu__item" href="form.html">Конкурс</a></li>
-                            <li><a class="menu__item" href="https://htmlacademy.ru/">HTML Academy</a></li>
+                        <ul class="hamburger-menu__box">
+                            <li><a class="hamburger-menu__item">Главная</a></li>
+                            <li><a class="hamburger-menu__item" href="catalog.html">Фотографии</a></li>
+                            <li><a class="hamburger-menu__item" href="form.html">Конкурс</a></li>
+                            <li><a class="hamburger-menu__item" href="https://htmlacademy.ru/">HTML Academy</a></li>
                         </ul>
                     </div>
 
@@ -66,38 +62,38 @@
                 <h2 class="visually-hidden">
                     Знакомство с мобильным приложением «Пинк»
                 </h2>
-                <div class="itro__slogan">
-                    <div class="itro__slogan-content">
+                <div class="intro__slogan">
+                    <div class="intro__slogan-content">
                         Взгляните на жизнь иначе!
                     </div>
                 </div>
 
-                <div class="into__block-icon">
-                    <a class="block-icon__link" href="#">Скачать приложение</a>
-                    <ul class="block-icon__list">
-                        <li class="block-icon__item">
-                            <a href="https://www.apple.com/shop">
+                <div class="intro__block-icon">
+                    <a class="intro__link" href="https://apps.apple.com/" target="_blank">Скачать приложение</a>
+                    <ul class="intro__list">
+                        <li class="intro__item">
+                            <a href="https://www.apple.com/shop" target="_blank">
                                 <svg width="47" height="56" role="img" aria-label="логотип компании «Apple»">
-                  <use xlink:href="img/sprite.svg#icon-apple"></use>
+                  <use xlink:href="img/sprite.svg#icon-apple "></use>
                 </svg>
                             </a>
                         </li>
-                        <li class="block-icon__item">
-                            <a href="https://www.android.com/">
+                        <li class="intro__item ">
+                            <a href="https://www.android.com/" target="_blank">
                                 <svg width="43" height="47" role="img" aria-label="логотип компании «Android»">
                   <use xlink:href="img/sprite.svg#icon-android"></use>
                 </svg>
                             </a>
                         </li>
-                        <li class="block-icon__item">
-                            <a href="https://www.microsoft.com/">
-                                <svg width="44" height="41" role="img" aria-label="логотип компании «Microsoft»">
+                        <li class="intro__item">
+                            <a href="https://www.microsoft.com/" target="_blank">
+                                <svg width=" 44" height="41" role="img" aria-label="логотип компании «Microsoft»">
                   <use xlink:href="img/sprite.svg#icon-microsoft"></use>
                 </svg>
                             </a>
                         </li>
                     </ul>
-                    <p class="block-icon__text">
+                    <p class="intro__text">
                         Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8
                     </p>
                 </div>
@@ -110,47 +106,48 @@
                 <div class="advantages__inner">
                     <h2 class="visually-hidden">Наши преимущества</h2>
                     <div class="advantages__slogan-block">
-                        <p class="slogan-block__content slogan-block__content-first">
+                        <p class="advantages__content advantages__content-first">
                             Устали от серости мегаполиса?
                         </p>
-                        <p class="slogan-block__content">
+                        <p class="advantages__content">
                             Нам есть, что вам<br> предложить!
                         </p>
                     </div>
+
                     <div class="advantages__main-advantages">
 
-                        <ul class="main-advantages__list">
-                            <li class="main-advantages__item">
-                                <img class="main-advantages__item-image main-advantages__item-image--hidden" src="img/iphone_1.png" srcset="img/iphone_1@2x.png 2x" width="186" height="382" alt="изображение iphone-3">
-                                <h3 class="main-advantages__item-title">
+                        <ul class="advantages__list">
+                            <li class="advantages__item">
+                                <img class="advantages__item-image advantages__item-image--hidden" src="img/iphone_1.png" srcset="img/iphone_1@2x.png 2x" width="186" height="382" alt="изображение iphone-3">
+                                <h3 class="advantages__item-title">
                                     Поднимает настроение
                                 </h3>
-                                <p class="main-advantages__item-content">
+                                <p class="advantages__item-content">
                                     Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
                                 </p>
                             </li>
-                            <li class="main-advantages__item">
-                                <img class="main-advantages__item-image main-advantages__item-image--hidden" src="img/iphone_2.png" srcset="img/iphone_2@2x.png 2x" width="186" height="382" alt="изображение iphone-3">
-                                <h3 class="main-advantages__item-title">
+                            <li class="advantages__item">
+                                <img class="advantages__item-image advantages__item-image--hidden" src="img/iphone_2.png" srcset="img/iphone_2@2x.png 2x" width="186" height="382" alt="изображение iphone-3">
+                                <h3 class="advantages__item-title">
                                     Меняет мир вокруг
                                 </h3>
-                                <p class="main-advantages__item-content">
-                                    Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                                <p class="advantages__item-content">
+                                    Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span class="advantages__item-content-span"></span> усилить эффект
                                 </p>
                             </li>
-                            <li class="main-advantages__item">
-                                <img class="main-advantages__item-image main-advantages__item-image--hidden" src="img/iphone_3.png" srcset="img/iphone_3@2x.png 2x" width="186" height="382" alt="изображение iphone-3">
-                                <h3 class="main-advantages__item-title">
+                            <li class="advantages__item">
+                                <img class="advantages__item-image advantages__item-image--hidden" src="img/iphone_3.png" srcset="img/iphone_3@2x.png 2x " width="186" height="382" alt="изображение iphone-3">
+                                <h3 class="advantages__item-title">
                                     Заводит новых друзей
                                 </h3>
-                                <p class="main-advantages__item-content">
+                                <p class="advantages__item-content">
                                     Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
                                 </p>
                             </li>
                         </ul>
-                        <img class="main-advantages__image main-advantages__image--mobile" src="img/iphone-3-mobile.png" srcset="img/iphone-3-mobile@2x.png 2x" width="157" height="320" alt="изображение iphone-3">
+                        <img class="advantages__image advantages__image--mobile" src="img/iphone-3-mobile.png" srcset="img/iphone-3-mobile@2x.png 2x" width="157" height="320" alt="изображение iphone-3">
 
-                        <img class="main-advantages__image main-advantages__image--tablet" src="img/iphone3-tablet.png" width="268" height="547" alt="изображение iphone-3">
+                        <img class="advantages__image advantages__image--tablet" src="img/iphone3-tablet.png" width="268" height="547" alt="изображение iphone-3">
                     </div>
                     <!--advantages__main-advantages-->
 
@@ -159,11 +156,11 @@
                         <img class="advantages__effect-image advantages__effect-image--tablet" src="img/timer-tablet.png" alt="секундомер" width="238" height="276">
                         <img class="advantages__effect-image advantages__effect-image--desktop" src="img/timer.png" alt="секундомер" width="298" height="345">
                         <div class="advantages__effect-content">
-                            <h2 class="effect-content__title">Эффект на 24 часа!</h2>
-                            <p class="effect-content__text">
-                                Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+                            <h2 class="advantages__effect-title">Эффект <span class="advantages__effect-span"></span> на 24 часа!</h2>
+                            <p class="advantages__effect-text">
+                                Британские ученые провели исследования и доказали, что положительный эффект<span class="advantages__effect-span"></span> от использования приложения длится целые сутки!
                             </p>
-                            <a class="effect-content__link" href="">
+                            <a class="advantages__effect-link" href="#">
                 Узнать больше об исследовании
               </a>
                         </div>
@@ -179,9 +176,9 @@
         <section class="reviews">
             <div class="container">
                 <h2 class="visually-hidden">Отзывы о нас</h2>
-                <div class="reviews__list slider__list">
+                <div class="reviews__list reviews__slider-list">
 
-                    <blockquote class="reviews__item slider__item">
+                    <blockquote class="reviews__item reviews__slider-item">
                         <div class="reviews__author-block">
                             <cite class="reviews__author-name">Николай Петров</cite>
                             <p class="reviews__text">
@@ -192,7 +189,7 @@
                         </div>
                     </blockquote>
 
-                    <blockquote class="reviews__item slider__item--hidden">
+                    <blockquote class="reviews__item reviews__slider-item-hidden">
                         <div class="reviews__author-block">
                             <cite class="reviews__author-name">Николай Петров</cite>
                             <p class="reviews__text">
@@ -203,7 +200,7 @@
                         </div>
                     </blockquote>
 
-                    <blockquote class="reviews__item slider__item--hidden">
+                    <blockquote class="reviews__item reviews__slider-item-hidden">
                         <div class="reviews__author-block">
                             <cite class="reviews__author-name">Николай Петров</cite>
                             <p class="reviews__text">
@@ -215,10 +212,10 @@
                     </blockquote>
 
                 </div>
-                <p class="reviews__toggles slider__toggles">
-                    <button class="slider__toggle slider__toggle--current slider__toggle--current-light" type="button"></button>
-                    <button class="slider__toggle" type="button"></button>
-                    <button class="slider__toggle" type="button"></button>
+                <p class="reviews__toggles reviews__slider-toggles">
+                    <button class="reviews__slider-toggle reviews__slider-toggle--current reviews__slider-toggle--current-light" type="button"></button>
+                    <button class="reviews__slider-toggle" type="button"></button>
+                    <button class="reviews__slider-toggle" type="button"></button>
                 </p>
             </div>
         </section>
@@ -238,7 +235,7 @@
                         <dd class="price__description">
                             <span class="price__description-text">Смайлики</span>
                         </dd>
-                        <dd class="price__description">
+                        <dd class="price__description ">
                             <span class="price__description-text">Комментарии</span>
                         </dd>
                     </div>
@@ -250,27 +247,39 @@
             </dt>
                         <dd class="price__description">
                             <span class="price__description-text price__description-text--hidden">Розовый фильтр</span>
-                            <svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="price__description-image " width="31" height="21" viewBox="0 0 31 21" fill="none">
                 <path
-                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z"
-                  fill="#3DC644" />
+                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714
+                                9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094
+                                9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z"
+                  fill="#3DC644 "/>
               </svg>
                         </dd>
                         <dd class="price__description">
-                            <span class="price__description-text price__description-text--hidden">Смайлики</span>
-                            <svg class="price__description-image" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="price__description-text price__description-text--hidden ">Смайлики</span>
+                            <svg class="price__description-image " width="27" height="27" viewBox="0 0 27 27" fill="none">
                 <path
-                  d="M15.6444 13.5065L26.5531 2.58654C26.6947 2.44667 26.8071 2.28009 26.8838 2.09645C26.9605 1.91281 27 1.71577 27 1.51674C27 1.31772 26.9605 1.12068 26.8838 0.937041C26.8071 0.753403 26.6947 0.58682 26.5531 0.446952C26.268 0.165899 25.8837 0.00834432 25.4834 0.00834432C25.0831 0.00834432 24.6988 0.165899 24.4137 0.446952L13.505 11.3669L2.58626 0.446952C2.44641 0.305366 2.27984 0.192953 2.09622 0.11623C1.9126 0.0395068 1.71558 0 1.51658 0C1.31758 0 1.12056 0.0395068 0.936941 0.11623C0.753322 0.192953 0.586757 0.305366 0.446904 0.446952C0.165881 0.73209 0.00834343 1.11638 0.00834343 1.51674C0.00834343 1.91711 0.165881 2.3014 0.446904 2.58654L11.3657 13.5065L0.446904 24.4164C0.305333 24.5562 0.192932 24.7228 0.116217 24.9064C0.0395025 25.0901 0 25.2871 0 25.4861C0 25.6852 0.0395025 25.8822 0.116217 26.0658C0.192932 26.2495 0.305333 26.4161 0.446904 26.5559C0.730723 26.8394 1.11545 26.9987 1.51658 26.9987C1.91771 26.9987 2.30244 26.8394 2.58626 26.5559L13.505 15.6461L24.4137 26.5559C24.698 26.839 25.0823 26.9985 25.4834 27C25.7826 26.9997 26.075 26.9108 26.3237 26.7444C26.5724 26.5781 26.7662 26.3417 26.8806 26.0653C26.9951 25.7888 27.0251 25.4847 26.9668 25.1912C26.9085 24.8977 26.7645 24.6281 26.5531 24.4164L15.6444 13.5065Z"
-                  fill="#F25B26" />
+                  d="M15.6444 13.5065L26.5531 2.58654C26.6947 2.44667 26.8071 2.28009 26.8838 2.09645C26.9605 1.91281 27 1.71577 27 1.51674C27 1.31772 26.9605 1.12068 26.8838 0.937041C26.8071 0.753403 26.6947 0.58682 26.5531 0.446952C26.268 0.165899
+                                25.8837 0.00834432 25.4834 0.00834432C25.0831 0.00834432 24.6988 0.165899 24.4137 0.446952L13.505 11.3669L2.58626 0.446952C2.44641 0.305366 2.27984 0.192953 2.09622 0.11623C1.9126 0.0395068 1.71558 0 1.51658 0C1.31758 0 1.12056
+                                0.0395068 0.936941 0.11623C0.753322 0.192953 0.586757 0.305366 0.446904 0.446952C0.165881 0.73209 0.00834343 1.11638 0.00834343 1.51674C0.00834343 1.91711 0.165881 2.3014 0.446904 2.58654L11.3657 13.5065L0.446904 24.4164C0.305333
+                                24.5562 0.192932 24.7228 0.116217 24.9064C0.0395025 25.0901 0 25.2871 0 25.4861C0 25.6852 0.0395025 25.8822 0.116217 26.0658C0.192932 26.2495 0.305333 26.4161 0.446904 26.5559C0.730723 26.8394 1.11545 26.9987 1.51658 26.9987C1.91771
+                                26.9987 2.30244 26.8394 2.58626 26.5559L13.505 15.6461L24.4137 26.5559C24.698 26.839 25.0823 26.9985 25.4834 27C25.7826 26.9997 26.075 26.9108 26.3237 26.7444C26.5724 26.5781 26.7662 26.3417 26.8806 26.0653C26.9951 25.7888
+                                27.0251 25.4847 26.9668 25.1912C26.9085 24.8977 26.7645 24.6281 26.5531 24.4164L15.6444 13.5065Z "
+                  fill="#F25B26 " />
               </svg>
 
                         </dd>
                         <dd class="price__description">
-                            <span class="price__description-text price__description-text--hidden">Комментарии</span>
-                            <svg class="price__description-image" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="price__description-text price__description-text--hidden ">Комментарии</span>
+                            <svg class="price__description-image" width="27" height="27" viewBox="0 0 27 27" fill="none">
                 <path
-                  d="M15.6444 13.5065L26.5531 2.58654C26.6947 2.44667 26.8071 2.28009 26.8838 2.09645C26.9605 1.91281 27 1.71577 27 1.51674C27 1.31772 26.9605 1.12068 26.8838 0.937041C26.8071 0.753403 26.6947 0.58682 26.5531 0.446952C26.268 0.165899 25.8837 0.00834432 25.4834 0.00834432C25.0831 0.00834432 24.6988 0.165899 24.4137 0.446952L13.505 11.3669L2.58626 0.446952C2.44641 0.305366 2.27984 0.192953 2.09622 0.11623C1.9126 0.0395068 1.71558 0 1.51658 0C1.31758 0 1.12056 0.0395068 0.936941 0.11623C0.753322 0.192953 0.586757 0.305366 0.446904 0.446952C0.165881 0.73209 0.00834343 1.11638 0.00834343 1.51674C0.00834343 1.91711 0.165881 2.3014 0.446904 2.58654L11.3657 13.5065L0.446904 24.4164C0.305333 24.5562 0.192932 24.7228 0.116217 24.9064C0.0395025 25.0901 0 25.2871 0 25.4861C0 25.6852 0.0395025 25.8822 0.116217 26.0658C0.192932 26.2495 0.305333 26.4161 0.446904 26.5559C0.730723 26.8394 1.11545 26.9987 1.51658 26.9987C1.91771 26.9987 2.30244 26.8394 2.58626 26.5559L13.505 15.6461L24.4137 26.5559C24.698 26.839 25.0823 26.9985 25.4834 27C25.7826 26.9997 26.075 26.9108 26.3237 26.7444C26.5724 26.5781 26.7662 26.3417 26.8806 26.0653C26.9951 25.7888 27.0251 25.4847 26.9668 25.1912C26.9085 24.8977 26.7645 24.6281 26.5531 24.4164L15.6444 13.5065Z"
-                  fill="#F25B26" />
+                  d="M15.6444 13.5065L26.5531 2.58654C26.6947 2.44667 26.8071 2.28009 26.8838 2.09645C26.9605 1.91281 27 1.71577 27 1.51674C27 1.31772 26.9605 1.12068 26.8838 0.937041C26.8071 0.753403 26.6947 0.58682 26.5531 0.446952C26.268 0.165899
+                                25.8837 0.00834432 25.4834 0.00834432C25.0831 0.00834432 24.6988 0.165899 24.4137 0.446952L13.505 11.3669L2.58626 0.446952C2.44641 0.305366 2.27984 0.192953 2.09622 0.11623C1.9126 0.0395068 1.71558 0 1.51658 0C1.31758 0 1.12056
+                                0.0395068 0.936941 0.11623C0.753322 0.192953 0.586757 0.305366 0.446904 0.446952C0.165881 0.73209 0.00834343 1.11638 0.00834343 1.51674C0.00834343 1.91711 0.165881 2.3014 0.446904 2.58654L11.3657 13.5065L0.446904 24.4164C0.305333
+                                24.5562 0.192932 24.7228 0.116217 24.9064C0.0395025 25.0901 0 25.2871 0 25.4861C0 25.6852 0.0395025 25.8822 0.116217 26.0658C0.192932 26.2495 0.305333 26.4161 0.446904 26.5559C0.730723 26.8394 1.11545 26.9987 1.51658 26.9987C1.91771
+                                26.9987 2.30244 26.8394 2.58626 26.5559L13.505 15.6461L24.4137 26.5559C24.698 26.839 25.0823 26.9985 25.4834 27C25.7826 26.9997 26.075 26.9108 26.3237 26.7444C26.5724 26.5781 26.7662 26.3417 26.8806 26.0653C26.9951 25.7888
+                                27.0251 25.4847 26.9668 25.1912C26.9085 24.8977 26.7645 24.6281 26.5531 24.4164L15.6444 13.5065Z "
+                  fill="#F25B26 " />
               </svg>
                         </dd>
                     </div>
@@ -282,26 +291,35 @@
             </dt>
                         <dd class="price__description">
                             <span class="price__description-text price__description-text--hidden">Розовый фильтр</span>
-                            <svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none">
                 <path
-                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z"
-                  fill="#3DC644" />
+                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714
+                                9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094
+                                9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z "
+                  fill="#3DC644 " />
               </svg>
                         </dd>
-                        <dd class="price__description">
-                            <span class="price__description-text price__description-text--hidden">Смайлики</span>
-                            <svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <dd class="price__description ">
+                            <span class="price__description-text price__description-text--hidden ">Смайлики</span>
+                            <svg class="price__description-image " width="31" height="21" viewBox="0 0 31 21" fill="none">
                 <path
-                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z"
-                  fill="#3DC644" />
+                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714
+                                9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094
+                                9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z "
+                  fill="#3DC644 " />
               </svg>
                         </dd>
-                        <dd class="price__description">
+                        <dd class="price__description ">
                             <span class="price__description-text price__description-text--hidden">Комментарии</span>
-                            <svg class="price__description-image" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="price__description-image " width="27" height="27" viewBox="0 0 27 27" fill="none">
                 <path
-                  d="M15.6444 13.5065L26.5531 2.58654C26.6947 2.44667 26.8071 2.28009 26.8838 2.09645C26.9605 1.91281 27 1.71577 27 1.51674C27 1.31772 26.9605 1.12068 26.8838 0.937041C26.8071 0.753403 26.6947 0.58682 26.5531 0.446952C26.268 0.165899 25.8837 0.00834432 25.4834 0.00834432C25.0831 0.00834432 24.6988 0.165899 24.4137 0.446952L13.505 11.3669L2.58626 0.446952C2.44641 0.305366 2.27984 0.192953 2.09622 0.11623C1.9126 0.0395068 1.71558 0 1.51658 0C1.31758 0 1.12056 0.0395068 0.936941 0.11623C0.753322 0.192953 0.586757 0.305366 0.446904 0.446952C0.165881 0.73209 0.00834343 1.11638 0.00834343 1.51674C0.00834343 1.91711 0.165881 2.3014 0.446904 2.58654L11.3657 13.5065L0.446904 24.4164C0.305333 24.5562 0.192932 24.7228 0.116217 24.9064C0.0395025 25.0901 0 25.2871 0 25.4861C0 25.6852 0.0395025 25.8822 0.116217 26.0658C0.192932 26.2495 0.305333 26.4161 0.446904 26.5559C0.730723 26.8394 1.11545 26.9987 1.51658 26.9987C1.91771 26.9987 2.30244 26.8394 2.58626 26.5559L13.505 15.6461L24.4137 26.5559C24.698 26.839 25.0823 26.9985 25.4834 27C25.7826 26.9997 26.075 26.9108 26.3237 26.7444C26.5724 26.5781 26.7662 26.3417 26.8806 26.0653C26.9951 25.7888 27.0251 25.4847 26.9668 25.1912C26.9085 24.8977 26.7645 24.6281 26.5531 24.4164L15.6444 13.5065Z"
-                  fill="#F25B26" />
+                  d="M15.6444 13.5065L26.5531 2.58654C26.6947 2.44667 26.8071 2.28009 26.8838 2.09645C26.9605 1.91281 27 1.71577 27 1.51674C27 1.31772 26.9605 1.12068 26.8838 0.937041C26.8071 0.753403 26.6947 0.58682 26.5531 0.446952C26.268 0.165899
+                                25.8837 0.00834432 25.4834 0.00834432C25.0831 0.00834432 24.6988 0.165899 24.4137 0.446952L13.505 11.3669L2.58626 0.446952C2.44641 0.305366 2.27984 0.192953 2.09622 0.11623C1.9126 0.0395068 1.71558 0 1.51658 0C1.31758 0 1.12056
+                                0.0395068 0.936941 0.11623C0.753322 0.192953 0.586757 0.305366 0.446904 0.446952C0.165881 0.73209 0.00834343 1.11638 0.00834343 1.51674C0.00834343 1.91711 0.165881 2.3014 0.446904 2.58654L11.3657 13.5065L0.446904 24.4164C0.305333
+                                24.5562 0.192932 24.7228 0.116217 24.9064C0.0395025 25.0901 0 25.2871 0 25.4861C0 25.6852 0.0395025 25.8822 0.116217 26.0658C0.192932 26.2495 0.305333 26.4161 0.446904 26.5559C0.730723 26.8394 1.11545 26.9987 1.51658 26.9987C1.91771
+                                26.9987 2.30244 26.8394 2.58626 26.5559L13.505 15.6461L24.4137 26.5559C24.698 26.839 25.0823 26.9985 25.4834 27C25.7826 26.9997 26.075 26.9108 26.3237 26.7444C26.5724 26.5781 26.7662 26.3417 26.8806 26.0653C26.9951 25.7888
+                                27.0251 25.4847 26.9668 25.1912C26.9085 24.8977 26.7645 24.6281 26.5531 24.4164L15.6444 13.5065Z "
+                  fill="#F25B26 " />
               </svg>
                         </dd>
                     </div>
@@ -309,38 +327,44 @@
                     <div class="price__item">
                         <dt class="price__number">
               <span class="price__number-tariff">Анлим</span>
-              <span class="price__number-cost">9,99 USD</span>
+              <span class="price__number-cost ">9,99 USD</span>
             </dt>
                         <dd class="price__description">
                             <span class="price__description-text price__description-text--hidden">Розовый фильтр</span>
-                            <svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none">
                 <path
-                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z"
-                  fill="#3DC644" />
+                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714
+                                9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094
+                                9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z "
+                  fill="#3DC644 " />
               </svg>
                         </dd>
                         <dd class="price__description">
                             <span class="price__description-text price__description-text--hidden">Смайлики</span>
-                            <svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="price__description-image " width="31" height="21" viewBox="0 0 31 21" fill="none">
                 <path
-                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z"
-                  fill="#3DC644" />
+                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714
+                                9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094
+                                9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z "
+                  fill="#3DC644 " />
               </svg>
                         </dd>
                         <dd class="price__description">
-                            <span class="price__description-text price__description-text--hidden">Комментарии</span>
-                            <svg class="price__description-image" width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="price__description-text price__description-text--hidden ">Комментарии</span>
+                            <svg class="price__description-image " width="31" height="21" viewBox="0 0 31 21" fill="none">
                 <path
-                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714 9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094 9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z"
-                  fill="#3DC644" />
+                  d="M30.5559 0.429509C30.4134 0.293412 30.2439 0.185389 30.0571 0.111671C29.8703 0.0379536 29.67 0 29.4676 0C29.2653 0 29.065 0.0379536 28.8782 0.111671C28.6914 0.185389 28.5219 0.293412 28.3794 0.429509L10.3744 17.4958L2.5777 10.1097C2.28714
+                                9.85325 1.90283 9.71362 1.50573 9.72025C1.10864 9.72689 0.72977 9.87928 0.448939 10.1453C0.168108 10.4114 0.00724504 10.7703 0.0002388 11.1464C-0.00676744 11.5226 0.140631 11.8867 0.41138 12.1619L9.29124 20.5741C9.4331 20.7094
+                                9.60187 20.8167 9.7878 20.8898C9.97372 20.9629 10.1731 21.0004 10.3744 21C10.7806 20.9986 11.1698 20.8456 11.4576 20.5741L30.5559 2.48172C30.8405 2.20822 31 1.83963 31 1.45561C31 1.0716 30.8405 0.703003 30.5559 0.429509Z "
+                  fill="#3DC644 " />
               </svg>
                         </dd>
                     </div>
                 </dl>
-                <p class="reviews__toggles slider__toggles reviews__toggles-price">
-                    <button class="slider__toggle" type="button"></button>
-                    <button class="slider__toggle slider__toggle--current" type="button"></button>
-                    <button class="slider__toggle" type="button"></button>
+                <p class="price__toggles price__slider-toggles price__slider-toggles-price">
+                    <button class="price__slider-toggle" type="button"></button>
+                    <button class="price__slider-toggle price__slider-toggle--current" type="button"></button>
+                    <button class="price__slider-toggle" type="button"></button>
                 </p>
             </div>
 
@@ -354,22 +378,22 @@
                 </p>
                 <div class="contacts__block">
                     <div class="contacts__block-information contacts__block-information--left">
-                        <span class="block-information__text">Звоните:</span>
-                        <a class="block-information__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+                        <span class="contacts__block-text">Звоните:</span>
+                        <a class="contacts__block-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
                     </div>
-                    <div class="contacts__block-information contacts__block-information--right">
-                        <span class="block-information__text">Пишите:</span>
-                        <a class="block-information__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    <div class="contacts__block-information contacts__block-information--right ">
+                        <span class="contacts__block-text">Пишите:</span>
+                        <a class="contacts__block-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                     </div>
                     <div class="contacts__block-information contacts__block-information--center">
-                        <span class="block-information__text">Приезжайте в гости:</span>
-                        <a class="block-information__link" href="#">ул. Большая<br> Конюшенная, 19/8</a>
+                        <span class="contacts__block-text">Приезжайте в гости:</span>
+                        <a class="contacts__block-link" href="# ">ул. Большая<br> Конюшенная, 19/8</a>
                     </div>
                 </div>
             </div>
 
             <div class="contacts__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002965!2d30.320858715898993!3d59.9387191690544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1616864218036!5m2!1sru!2sua"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002965!2d30.320858715898993!3d59.9387191690544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1616864218036!5m2!1sru!2sua "
                     width="1200" height="502" style="border:0;" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </iframe>
             </div>
@@ -390,28 +414,28 @@
 
             </div>
             <div class="footer__social-block">
-                <ul class="social-block__list">
-                    <li class="social-block__item">
-                        <a href="#" class="social-block__link" aria-label="Твитер">
-                            <svg class="social-block__link-svg" width="18" height="14" role="img" aria-label="логотип компании «Твитер»">
-                <use xlink:href="img/sprite.svg#twitter"></use>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="# " class="footer__link" aria-label="Твитер">
+                            <svg class="footer__link-svg" width="18" height="14" role="img" aria-label="логотип компании «Твитер»">
+                <use xlink:href="img/sprite.svg#twitter "></use>
               </svg>
                         </a>
                     </li>
 
-                    <li class="social-block__item">
-                        <a href="#" class="social-block__link" aria-label="Фейсбук">
-                            <svg class="social-block__link-svg" width="9" height="18" role="img" aria-label="логотип компании «Фейсбук»">
-                <use xlink:href="img/sprite.svg#facebook"></use>
+                    <li class="footer__item">
+                        <a href="# " class="footer__link" aria-label="Фейсбук">
+                            <svg class="footer__link-svg" width="9" height="18" role="img" aria-label="логотип компании «Фейсбук» ">
+                <use xlink:href="img/sprite.svg#facebook "></use>
               </svg>
 
                         </a>
                     </li>
 
-                    <li class="social-block__item">
-                        <a href="#" class="social-block__link" aria-label="Ютуб">
-                            <svg class="social-block__link-svg" width="15" height="13" role="img" aria-label="логотип компании «Ютуб»">
-                <use xlink:href="img/sprite.svg#youtube"></use>
+                    <li class="footer__item">
+                        <a href="# " class="footer__link" aria-label="Ютуб">
+                            <svg class="footer__link-svg" width="15" height="13" role="img" aria-label="логотип компании «Ютуб»">
+                <use xlink:href="img/sprite.svg#youtube "></use>
               </svg>
                         </a>
                     </li>
@@ -420,7 +444,7 @@
 
             <div class="footer__copyright copyright">
                 <span class="copyright__text">Разработано:</span>
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <a class="copyright__link " href="https://htmlacademy.ru/intensive/adaptive ">
                     <svg class="copyright__link-svg">
             <use xlink:href="img/sprite.svg#icon_html-academy"></use>
           </svg>
