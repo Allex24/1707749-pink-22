@@ -302,7 +302,7 @@
                 <p class="post__content">
                     Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!
                 </p>
-                <div class="post__block">
+                <form class="post__block" method="get" action="https://echo.htmlacademy.ru">
                     <a href="#">
                         <picture>
                             <source media="(min-width: 660px)" srcset="img/post-photo-tablet.jpg, img/post-photo-tablett@2x.jpg 2x">
@@ -332,13 +332,13 @@
                                 <input class="post__input post__input--hidden" type="range" id="contrast" name="contrast" min="0" max="100" value="50">
                             </div>
                         </div>
-                        <form class="post__block-button">
+                        <div class="post__block-button">
                             <button class="post__button post__button--activ" type="submit">Запостить</button>
                             <button class="post__button post__button--inactive" type="reset">Отмена</button>
-                        </form>
+                        </div>
                     </div>
                     <!-- post__block-form -->
-                </div>
+                </form>
                 <!-- post__block -->
             </div>
             <!-- wrapper -->
