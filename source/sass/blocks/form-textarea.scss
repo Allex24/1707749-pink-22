@@ -23,7 +23,28 @@
     }
 }
 
-.contact-input__input--center {
+.form-block__textarea-input {
+    font-size: 18px;
+    line-height: 30px;
+    color: $darkgrey;
+    padding: 15px 20px;
+    border: 2px solid $borderGrey;
+    border-radius: 1px;
+    cursor: pointer;
+    outline: none;
+}
+
+.form-block__textarea-input:hover,
+.form-block__textarea-input:focus {
+    border-color: $darkgrey;
+    transition: all .3s ease;
+}
+
+.form-block__textarea-input:active {
+    border-color: $pink;
+}
+
+.form-block__textarea-input--center {
     width: 100%;
     min-height: 200px;
     padding: 13px 0 0 20px;
