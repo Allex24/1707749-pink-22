@@ -1,18 +1,4 @@
-// form-block__form-button
-.form-block__form-button {
-    padding: 0 20px;
-    @media (min-width: $tablet-width) {
-        order: 6;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    @media (min-width: $desktop-width) {
-        width: 940px;
-        padding: 0;
-    }
-}
-
+// button
 .button {
     width: 280px;
     height: 65px;

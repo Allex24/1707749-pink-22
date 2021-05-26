@@ -1,0 +1,6 @@
+// item-checkbox
+.item-checkbox-center {
+    @media (min-width: $desktop-width) {
+        transform: translate(10px);
+    }
+}

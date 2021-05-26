@@ -100,3 +100,47 @@
     color: #bfc3c7;
     transition: all .3s ease;
 }
+
+// map
+.contacts__map {
+    overflow: hidden;
+    padding-bottom: 68%;
+    position: relative;
+    height: 0;
+    @media (min-width: $tablet-width) {
+        padding-bottom: 56%;
+    }
+    @media (min-width: $desktop-width) {
+        padding-bottom: 41%;
+    }
+}
+
+.contacts__map iframe {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.contacts__map:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 16%;
+    background: linear-gradient(to right top, transparent 49.5%, $white 50%) left / 50.025% 100% no-repeat, linear-gradient(to left top, transparent 49.5%, $white 50%) right / 50.025% 100% no-repeat;
+    z-index: 2;
+}
+
+@media (min-width: 660px) {
+    .contacts__map:before {
+        padding-top: 10%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contacts__map:before {
+        padding-top: 8%;
+    }
+}

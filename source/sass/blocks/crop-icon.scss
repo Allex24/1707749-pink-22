@@ -1,0 +1,14 @@
+// crop-icon
+.crop-icon {
+    width: 44px;
+    height: 44px;
+    fill: $pink;
+    @media (min-width: $tablet-width) {
+        width: 22px;
+        height: 22px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 44px;
+        height: 44px;
+    }
+}

@@ -1,0 +1,21 @@
+// user-phone
+.contact-input--user-phone {
+    @media (min-width: $tablet-width) {
+        position: relative;
+    }
+}
+
+.contact-input--user-phone::after {
+    @media (min-width: $tablet-width) {
+        content: '';
+        background-image: url(../img/phone-icon.svg);
+        position: absolute;
+        width: 20px;
+        height: 19px;
+        right: 80px;
+        top: 23px;
+    }
+    @media (min-width: $desktop-width) {
+        right: 21px;
+    }
+}

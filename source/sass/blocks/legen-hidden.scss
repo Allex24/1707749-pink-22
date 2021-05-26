@@ -1,0 +1,7 @@
+//legen-hidden
+.legen-hidden {
+    display: none;
+    @media (min-width: $tablet-width) {
+        display: block;
+    }
+}

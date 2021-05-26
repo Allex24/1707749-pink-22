@@ -1,0 +1,8 @@
+// legend-checkbox
+.legend-checkbox {
+    max-width: 218px;
+    margin: 0 auto 42px;
+    @media (min-width: $tablet-width) {
+        max-width: 100%;
+    }
+}

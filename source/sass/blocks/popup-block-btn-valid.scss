@@ -1,0 +1,6 @@
+// popup-block-btn-valid
+.popup-block-btn--valid {
+    @media (min-width: $tablet-width) {
+        background-color: $lightgrey;
+    }
+}

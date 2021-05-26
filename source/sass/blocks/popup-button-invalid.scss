@@ -1,0 +1,9 @@
+// popup-button-invalid
+.popup-button-invalid {
+    @media (min-width: $tablet-width) {
+        margin-bottom: 54px;
+    }
+    @media (min-width: $desktop-width) {
+        margin: 52px 0;
+    }
+}

@@ -1,0 +1,33 @@
+//form-contacts-phone{
+.contact-input-phone {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.contact-input-phone::before {
+    @media (min-width: $tablet-width) {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: $borderGrey;
+        right: 62px;
+        top: 2px;
+    }
+    @media (min-width: $desktop-width) {
+        right: 2px;
+    }
+}
+
+.contact-input-phone:last-child {
+    margin-bottom: 0;
+    @media (min-width: $tablet-width) {
+        margin-bottom: 18px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+    }
+}

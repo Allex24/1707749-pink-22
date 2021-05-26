@@ -1,0 +1,14 @@
+// contact-input-name
+.contact-input--name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-bottom: 52px;
+    }
+}

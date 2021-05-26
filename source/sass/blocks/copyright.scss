@@ -1,0 +1,24 @@
+//copyright
+.copyright__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 15px;
+    @media (min-width: $desktop-width) {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}
+
+.copyright__link-svg {
+    width: 27px;
+    height: 34px;
+    fill: $pink;
+    &:hover {
+        fill: $darkgrey;
+        transition: all .3s ease;
+    }
+    &:active {
+        fill: $darkgrey;
+        opacity: 0.3;
+    }
+}

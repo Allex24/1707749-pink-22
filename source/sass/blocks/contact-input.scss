@@ -1,0 +1,70 @@
+// contact-input
+.contact-input__label {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $pink;
+}
+
+.contact-input__input {
+    font-size: 18px;
+    line-height: 30px;
+    color: $darkgrey;
+    padding: 15px 20px;
+    border: 2px solid $borderGrey;
+    border-radius: 1px;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact-input__input:hover,
+.contact-input__input:focus {
+    border-color: $darkgrey;
+    transition: all .3s ease;
+}
+
+.contact-input__input:active {
+    border-color: $pink;
+}
+
+.contact-input__input--name {
+    @media (min-width: $tablet-width) {
+        width: 100%;
+    }
+}
+
+.contact-input--name:last-child {
+    margin-bottom: 40px;
+    @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+    }
+}
+
+.contact-input__label--name {
+    margin: 0 0 5px 23px;
+    @media (min-width: $tablet-width) {
+        margin: 0 20px 0 0;
+    }
+}
+
+.contact-input__label--phone {
+    margin: 0 0 5px 22px;
+    @media (min-width: $tablet-width) {
+        order: 2;
+        margin: 10px 0 10px 77px;
+    }
+    @media (min-width: $desktop-width) {
+        margin: 9px 0 0 17px;
+    }
+}
+
+.contact-input__input--phone {
+    @media (min-width: $tablet-width) {
+        order: 1;
+        margin: 0 60px;
+    }
+    @media (min-width: $desktop-width) {
+        margin: 0;
+        width: 375px;
+    }
+}

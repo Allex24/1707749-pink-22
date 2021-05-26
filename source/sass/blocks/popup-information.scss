@@ -1,0 +1,11 @@
+// popup-information
+.popup-information {
+    @media (min-width: $tablet-width) {
+        max-width: 300px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    @media (min-width: $desktop-width) {
+        max-width: 350px;
+    }
+}

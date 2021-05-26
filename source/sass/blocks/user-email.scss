@@ -1,0 +1,21 @@
+// user-email
+.contact-input--user-email {
+    @media (min-width: $tablet-width) {
+        position: relative;
+    }
+}
+
+.contact-input--user-email::after {
+    @media (min-width: $tablet-width) {
+        content: '';
+        background-image: url(../img/mail-icon.svg);
+        position: absolute;
+        width: 18px;
+        height: 13px;
+        right: 80px;
+        top: 25px;
+    }
+    @media (min-width: $desktop-width) {
+        right: 21px;
+    }
+}

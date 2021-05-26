@@ -1,0 +1,13 @@
+// popup-text
+.popup-text {
+    @media (min-width: $tablet-width) {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-bottom: 68px;
+        max-width: 350px;
+    }
+}

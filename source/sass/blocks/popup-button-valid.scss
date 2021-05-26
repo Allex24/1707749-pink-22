@@ -1,0 +1,9 @@
+// popup-button-valid
+.popup-button-valid {
+    @media (min-width: $tablet-width) {
+        margin: 52px 0;
+    }
+    @media (min-width: $desktop-width) {
+        width: 460px;
+    }
+}

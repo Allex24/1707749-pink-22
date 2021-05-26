@@ -1,0 +1,16 @@
+// popup-title
+.popup-title {
+    @media (min-width: $tablet-width) {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        color: $black;
+        line-height: 40px;
+        padding-top: 49px;
+        margin: 0 auto 37px;
+        width: 260px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 330px;
+    }
+}

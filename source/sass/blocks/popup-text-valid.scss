@@ -1,0 +1,10 @@
+// popup-text-valid
+.popup-text--valid {
+    @media (min-width: $tablet-width) {
+        margin-bottom: 34px;
+    }
+    @media (min-width: $tablet-width) {
+        max-width: 380px;
+        margin: 0 auto 44px;
+    }
+}
