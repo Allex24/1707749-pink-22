@@ -1,23 +1,22 @@
-// Header
 .header {
-    background-color: $bg-header;
     position: relative;
-    z-index: 100;
+    z-index: 2;
+    background-color: $bg-header;
     width: 100%;
-    @media (min-width: $desktop-width) {
-        position: absolute;
-    }
     &__inner {
-        padding: 0 20px;
-        min-height: 66px;
+        background-color: $darkgrey;
+        padding: 23px 20px 0 20px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         @media (min-width: $tablet-width) {
-            min-height: 110px;
+            padding: 27px 20px 0 20px;
         }
         @media (min-width: $desktop-width) {
             padding: 0 130px;
+            min-height: 110px;
+            background-color: transparent;
         }
     }
 }

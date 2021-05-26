@@ -1,6 +1,6 @@
 // Intro-form
 .intro-form {
-    margin-top: 193px;
+    margin-top: -66px;
     min-height: 237px;
     background-image: url(../img/bg-intro-form-mobile.png);
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
         background-image: url(../img/bg-intro-form-mobile@2x.png);
     }
     @media (min-width: $tablet-width) {
-        margin-top: 146px;
+        margin-top: -110px;
         min-height: 440px;
         background-image: url(../img/form-bg-tablet.jpg);
         @media (min-resolution: 2dppx) {
@@ -19,7 +19,6 @@
         }
     }
     @media (min-width: $desktop-width) {
-        margin-top: 0;
         min-height: 394px;
         background-image: url(../img/form-bg-desktop.jpg);
         @media (min-resolution: 2dppx) {

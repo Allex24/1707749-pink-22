@@ -1,89 +1,14 @@
 // hamburger-menu
-.hamburger-menu__button {
-    display: none;
+.hamburger-menu-button {
+    width: 23px;
+    height: 23px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
 }
 
-.hamburger-menu__box {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    min-height: 260px;
-    margin: 0;
-    padding: 69px 0 0;
-    list-style: none;
-    background-color: $darkgrey;
-    transition-duration: .25s;
-    @media (min-width: $tablet-width) {
-        padding-top: 110px;
-    }
-    @media (min-width: $desktop-width) {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        visibility: visible;
-        min-height: auto;
-        width: auto;
-        margin: 17px 0 0;
-        padding: 0;
-        background-color: transparent;
-    }
-}
-
-.hamburger-menu__item {
-    display: block;
-    padding: 16px 0;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: $white;
-    transition-duration: .25s;
-    box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
-    cursor: pointer;
-    @media (min-width: $desktop-width) {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 18px;
-        text-transform: none;
-        margin-left: 80px;
-        box-shadow: none;
-        padding: 0;
-    }
-}
-
-.hamburger-menu__item:hover,
-.hamburger-menu__item:focus {
-    color: $pink;
-    transition: all .3s ease;
-}
-
-.hamburger-menu__item:active {
-    color: $pink;
-    opacity: 0.3;
-    @media (min-width: $desktop-width) {
-        color: $white;
-        opacity: 0.3;
-    }
-}
-
-.hamburger-menu__item--active,
-.hamburger-menu__item--active:hover,
-.hamburger-menu__item--active:active {
-    color: $white;
-    position: relative;
-}
-
-.hamburger-menu__item--active::before {
-    @media (min-width: $desktop-width) {
-        content: '';
-        position: absolute;
-        bottom: -13px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: $lightgrey;
-    }
+.hamburger-menu-button__close-menu-btn {
+    height: 23px;
+    width: 23px;
+    fill: $white;
 }
