@@ -1,4 +1,10 @@
 // advantages-effect
+.advantages__effect-block {
+    @media (min-width: $desktop-width) {
+        background-color: $lightgrey;
+    }
+}
+
 .advantages__effect {
     background-color: $white;
     display: none;
@@ -10,7 +16,8 @@
         z-index: 2;
     }
     @media (min-width: $desktop-width) {
-        margin-top: 0;
+        max-width: 1200px;
+        margin: 0 auto;
         background-color: $lightgrey;
         padding: 17px 166px 61px 131px;
     }

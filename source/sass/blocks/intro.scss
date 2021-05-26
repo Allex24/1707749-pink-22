@@ -9,6 +9,14 @@
         }
     }
 
+    .intro__wrapper {
+        @media (min-width: $desktop-width) {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+    }
+
     .intro__slogan {
         height: 462px;
         background-image: url(../img/bg-intro-mobile.png);
